@@ -1,0 +1,1 @@
+poetry run uvicorn app:app --reload --host 0.0.0.0 --port 8001 --log-config=log_conf.yaml --use-colors

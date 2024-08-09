@@ -14,3 +14,6 @@ src/__pycache__/
 src/clinfoai/__pycache__/
 src/clinfoai/utils/__pycache__/
 /scripts/data
+
+
+.env
