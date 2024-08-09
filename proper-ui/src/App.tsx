@@ -4,6 +4,7 @@ import { ThemeProvider } from "./components/theme-provider";
 import Landing from "./layouts/Landing";
 import Root from "./layouts/Root";
 import Auth from "./layouts/Auth";
+import Dashboard from "./layouts/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
         element: <Auth />,
       },
     ],
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
   },
 ]);
 
