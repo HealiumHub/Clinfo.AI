@@ -34,7 +34,7 @@ const Navbar = () => {
     }
   }, []);
   return (
-    <div className="w-fit fixed top-3 left-1/2 -translate-x-1/2">
+    <div className="w-fit fixed top-3 left-1/2 -translate-x-1/2 z-50 isolate">
       <div className="flex justify-center gap-2 bg-primary py-2 px-8 rounded-lg">
         {navItems.map((item, index) => (
           <Button
