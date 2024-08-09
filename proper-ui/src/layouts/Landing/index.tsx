@@ -11,6 +11,7 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import Marquee from "react-fast-marquee";
+import { Separator } from "@/components/ui/separator";
 
 const Landing = () => {
   return (
@@ -98,6 +99,12 @@ const Landing = () => {
       </section>
 
       {/* Footer */}
+      <section className="mt-36">
+        <Separator />
+        <h1 className="text-primary text-xl font-medium opacity-50 mt-8">
+          Created at RMIT Vietnam
+        </h1>
+      </section>
     </div>
   );
 };
