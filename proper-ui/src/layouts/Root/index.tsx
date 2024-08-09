@@ -1,11 +1,10 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../Navbar";
 
 const Root = () => {
   return (
-    <div className="relative w-full h-full">
-      <main>{<Outlet />}</main>
+    <div className="relative w-screen h-full">
+      <Outlet />
       <Navbar />
     </div>
   );

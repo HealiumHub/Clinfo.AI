@@ -1,8 +1,6 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import { ThemeProvider } from "./components/theme-provider";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Button } from "./components/ui/button";
-import { ModeToggle } from "./components/mode-toggle";
 import Landing from "./layouts/Landing";
 import Root from "./layouts/Root";
 

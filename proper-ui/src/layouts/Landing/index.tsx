@@ -1,21 +1,17 @@
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-card";
+import { Separator } from "@/components/ui/separator";
 import { TypewriterEffect } from "@/components/ui/typewritter";
 import { Vortex } from "@/components/ui/vortex";
-import { features, heroWords, testimonials } from "./const";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-} from "@/components/ui/card";
 import Marquee from "react-fast-marquee";
-import { Separator } from "@/components/ui/separator";
+import { features, heroWords, testimonials } from "./const";
+import { EvervaultCard } from "@/components/ui/evervault-card";
 
 const Landing = () => {
   return (
-    <div className="relative h-full">
+    <div className="relative w-full h-full">
       {/* Hero */}
       <section className="relative h-[36rem] grid place-items-center">
         <Vortex
@@ -36,7 +32,7 @@ const Landing = () => {
       </section>
 
       {/* Testinomials */}
-      <section>
+      <section className="max-w-6xl mx-auto">
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
@@ -45,13 +41,15 @@ const Landing = () => {
       </section>
 
       {/* Problems */}
-      <section className="mt-20">
+      <section className="max-w-6xl mx-auto mt-20">
         <h1 className="text-primary font-semibold text-5xl">
           Why HealthLight?
         </h1>
-        <div className="grid grid-cols-3 gap-3 mt-4">
+        <div className="grid grid-cols-3 gap-3 mt-8 -skew-x-3">
           <Card>
-            <CardHeader>Hallucination</CardHeader>
+            <CardHeader>
+              <EvervaultCard text="Hallucination" />
+            </CardHeader>
             <CardContent>
               Hallucinations are experiences that involve the perception of
               things that are not present in the environment. They can affect
@@ -59,7 +57,9 @@ const Landing = () => {
             </CardContent>
           </Card>
           <Card>
-            <CardHeader>Hallucination</CardHeader>
+            <CardHeader>
+              <EvervaultCard text="Hallucination" />
+            </CardHeader>
             <CardContent>
               Hallucinations are experiences that involve the perception of
               things that are not present in the environment. They can affect
@@ -67,7 +67,9 @@ const Landing = () => {
             </CardContent>
           </Card>
           <Card>
-            <CardHeader>Hallucination</CardHeader>
+            <CardHeader>
+              <EvervaultCard text="Hallucination" />
+            </CardHeader>
             <CardContent>
               Hallucinations are experiences that involve the perception of
               things that are not present in the environment. They can affect
@@ -78,7 +80,7 @@ const Landing = () => {
       </section>
 
       {/* Features */}
-      <section className="mt-20">
+      <section className="max-w-6xl mx-auto mt-20">
         <h1 className="text-primary font-semibold text-5xl">Features</h1>
         <HoverEffect items={features} />
       </section>
