@@ -8,11 +8,27 @@ from fastapi.responses import JSONResponse
 # Make Sure you followed at least step 1-2 before running this cell.
 from config import GOOGLE_API_KEY, OPENAI_API_KEY
 from models import Payload
+from fastapi.middleware.cors import CORSMiddleware
 
 from utilities import nrpm, search_articles, highlight_summary
 
 logger = logging.getLogger(__name__)
+
 app = FastAPI()
+
+origins = [
+    "http://localhost",
+    "http://localhost:5173",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY

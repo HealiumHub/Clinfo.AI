@@ -1,6 +1,6 @@
 import React from "react";
 
-import { AmbulanceIcon, ArrowUp } from "lucide-react";
+import { ClinfoResponse } from "@/api/types";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -10,12 +10,17 @@ import {
 } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { z } from "zod";
-import { useRef, useState } from "react";
-import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { AmbulanceIcon, ArrowUp } from "lucide-react";
+import { useRef } from "react";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { ChatStateEnum } from ".";
 
-interface InitChatStateProps {}
+interface InitChatStateProps {
+  setChatState: React.Dispatch<React.SetStateAction<ChatStateEnum>>;
+  handleSearch: (query: string) => Promise<ClinfoResponse | undefined>;
+}
 
 export const ChatFormSchema = z.object({
   message: z.string().min(2),
@@ -40,7 +45,10 @@ const exampleQuestions = [
   },
 ];
 
-const InitChatState = () => {
+const InitChatState: React.FC<InitChatStateProps> = ({
+  setChatState,
+  handleSearch,
+}) => {
   const form = useForm<z.infer<typeof ChatFormSchema>>({
     resolver: zodResolver(ChatFormSchema),
     defaultValues: {
@@ -48,9 +56,10 @@ const InitChatState = () => {
     },
   });
   const submitButtonRef = useRef<HTMLButtonElement>(null);
-  const onSubmit = async (data: z.infer<typeof ChatFormSchema>) => {
-    console.log(data);
-    await form.reset();
+
+  const onSubmit = async (values: z.infer<typeof ChatFormSchema>) => {
+    form.reset();
+    handleSearch(values.message);
   };
 
   const handleCardClick = async (question: string) => {
