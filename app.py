@@ -10,7 +10,7 @@ from config import GOOGLE_API_KEY, OPENAI_API_KEY
 from models import Payload
 from fastapi.middleware.cors import CORSMiddleware
 
-from utilities import nrpm, search_articles, highlight_summary
+from utilities import nrpm, post_process_answer, search_articles, highlight_summary
 
 logger = logging.getLogger(__name__)
 
@@ -42,7 +42,7 @@ def search(payload: Payload):
     article_summaries, irrelevant_articles = nrpm.summarize_each_article(
         articles, payload.question
     )
-    synthesis = nrpm.synthesize_all_articles(
+    synthesis, citations = nrpm.synthesize_all_articles(
         article_summaries, payload.question, with_url=True
     )
 
@@ -54,7 +54,10 @@ def search(payload: Payload):
 
     return JSONResponse(
         content={
-            "synthesis": synthesis,
+            "synthesis": {
+                "content": post_process_answer(synthesis),
+                "citations": citations,
+            },
             "translate_synthesis": translate_synthesis,
             "article_summaries": article_summaries,
         },

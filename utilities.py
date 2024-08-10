@@ -33,18 +33,17 @@ def search_articles(question: str):
     return articles
 
 
-def highlight_answer(summary: str) -> str:
+def post_process_answer(summary: str) -> str:
     summary = summary.replace("TL;DR:", "**TL;DR:**")
     summary = summary.replace("Literature Summary:", "**Literature Summary:**")
 
-    # There are two references section if with_url = True
-    # Remove the first section and only keep the second, it's in html.
-    first_ref_index = summary.find("References:")
-    second_ref_index = summary.rfind("References:")
 
-    summary = summary[:first_ref_index] + summary[second_ref_index:]
+    # Trick lord, refs are added via prompt, not sure impact of changing prompt to quality yet
+    # -> So I'll rule-based cut all References out.
+    # remove everything after References, refs are generated on FE.
+    if "References" in summary:
+        summary = summary[: summary.find("References")]
 
-    summary = summary.replace("References:", "**References:**")
     return summary
 
 

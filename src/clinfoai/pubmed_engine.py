@@ -626,25 +626,22 @@ class PubMedNeuralRetriever:
         self, article_summaries: dict, with_url: bool = False
     ) -> tuple:
         article_summaries_with_citations = []
-        citations = []
+        citations: list[dict] = []
         for i, summary in enumerate(article_summaries):
             citation = re.sub(r"\n", "", summary["citation"])
+            
+            citations.append({
+              "index": i + 1,
+              "url": summary['url'],
+              "text": citation
+            })
+            
             article_summaries_with_citations.append(
                 f"[{i+1}] Source: {citation}\n\n\n {summary['summary']}"
             )
-            citation_with_index = f"[{i+1}] {citation }"
-            if with_url:
-                citation_with_index = f"<li><a href=\"{summary['url']}\"   target=\"_blank\"> {citation_with_index}</a></li>"
-
-            citations.append(citation_with_index)
         article_summaries_with_citations = "\n\n--------------------------------------------------------------\n\n".join(
             article_summaries_with_citations
         )
-
-        citations = "\n".join(citations)
-
-        if with_url:
-            citations = f"<ul>{citations}</ul>"
 
         return article_summaries_with_citations, citations
 
@@ -684,7 +681,7 @@ class PubMedNeuralRetriever:
                     ),
                 },
             ]
-            return message_
+            return message_, citations
         else:
             system_message_prompt = SystemMessagePromptTemplate.from_template(
                 system_prompt
@@ -715,10 +712,7 @@ class PubMedNeuralRetriever:
                 delay=self.time_out,
             )
 
-            if with_url:
-                result = result + "\n\n" + "References:\n" + citations
-
-            return result
+            return result, citations
 
     def translate_en_to_vn(self, text: str) -> str:
         t = TranslationEngine(key=os.environ["GOOGLE_API_KEY"])
