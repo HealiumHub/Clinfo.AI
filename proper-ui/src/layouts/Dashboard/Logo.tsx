@@ -8,7 +8,7 @@ export const Logo = () => {
       className="font-normal flex space-x-2 items-center text-sm text-black relative z-20"
     >
       <img
-        src="RMIT_logo_red.png"
+        src="/RMIT_logo_red.png"
         alt="rmit-logo"
         className="h-6 w-6 inline-block scale-[180%]"
       />

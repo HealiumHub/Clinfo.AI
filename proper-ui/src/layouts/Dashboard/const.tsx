@@ -3,7 +3,7 @@ import { ArrowLeft, MessageSquare, Settings, UserIcon } from "lucide-react";
 export const links = [
   {
     label: "Chat",
-    href: "#",
+    href: "/dashboard/chat",
     icon: (
       <MessageSquare className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       // <IconBrandTabler className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />

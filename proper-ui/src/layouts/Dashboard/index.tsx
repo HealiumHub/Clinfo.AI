@@ -1,10 +1,10 @@
 import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar";
 import { cn } from "@/lib/utils";
-import React, { useState } from "react";
+import { useState } from "react";
 import { links } from "./const";
-import { Triangle } from "lucide-react";
 import { Logo } from "./Logo";
 import { LogoIcon } from "./LogoIcon";
+import { Outlet } from "react-router-dom";
 
 const Dashboard = () => {
   const [open, setOpen] = useState(false);
@@ -47,7 +47,7 @@ const Dashboard = () => {
           </div>
         </SidebarBody>
       </Sidebar>
-      <div className="bg-background w-full h-full"></div>
+      <Outlet />
     </div>
   );
 };
