@@ -52,11 +52,12 @@ const Chat = () => {
       case ChatStateEnum.LOADING:
         return <Loading />;
       case ChatStateEnum.SUCCESS:
-        return <Result result={result!} />;
+        return <Result result={result!} setChatState={setChatState} />;
       case ChatStateEnum.ERROR:
         return <Error />;
       default:
-        return "Default";
+        // return <Result result={result!} setChatState={setChatState} />;
+        return <Error />;
     }
   };
 

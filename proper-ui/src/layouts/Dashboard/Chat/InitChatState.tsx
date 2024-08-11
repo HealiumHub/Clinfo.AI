@@ -67,7 +67,7 @@ const InitChatState: React.FC<InitChatStateProps> = ({
     await form.handleSubmit(onSubmit)();
   };
   return (
-    <div className="w-full h-full flex flex-col px-8 py-4">
+    <div className="w-full h-screen flex flex-col px-8 py-4 overflow-auto">
       <div className="w-full h-full">
         <div className="my-auto h-fit w-full flex flex-col items-center gap-4 mt-8">
           <img src="/RMIT_logo_red.png" alt="" className="h-40 w-40" />

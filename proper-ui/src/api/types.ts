@@ -9,7 +9,18 @@ export interface ArticleSummary {
 }
 
 export interface ClinfoResponse {
-  synthesis: string;
+  synthesis: ClinfoSynthesis;
   translate_synthesis: string;
   article_summaries: ArticleSummary[];
+}
+
+export interface ClinfoSynthesis {
+  content: string;
+  citations: ClinfoSynthesisCitation[];
+}
+
+export interface ClinfoSynthesisCitation {
+  index: number;
+  url: string;
+  text: string;
 }

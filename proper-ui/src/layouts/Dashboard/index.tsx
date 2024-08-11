@@ -11,8 +11,8 @@ const Dashboard = () => {
   return (
     <div
       className={cn(
-        "flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 w-screen flex-1 mx-auto border border-neutral-200 dark:border-neutral-700 overflow-hidden",
-        "h-screen relative w-screen"
+        "flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 w-screen flex-1 mx-auto border border-neutral-200 dark:border-neutral-700",
+        "h-full relative w-screen"
       )}
     >
       <Sidebar open={open} setOpen={setOpen} animate={true}>
@@ -47,7 +47,9 @@ const Dashboard = () => {
           </div>
         </SidebarBody>
       </Sidebar>
-      <Outlet />
+      <div className="w-full h-full overflow-auto">
+        <Outlet />
+      </div>
     </div>
   );
 };

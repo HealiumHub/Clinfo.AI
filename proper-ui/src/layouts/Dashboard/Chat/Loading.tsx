@@ -30,7 +30,7 @@ const Loading = () => {
   }, []);
 
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center gap-16">
+    <div className="w-full h-screen flex flex-col justify-center items-center gap-16">
       <img
         src="/RMIT_logo_red.png"
         alt=""
