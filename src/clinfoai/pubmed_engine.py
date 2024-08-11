@@ -726,13 +726,16 @@ class PubMedNeuralRetriever:
     # return [r["translation_text"] for r in res]
 
     def translate_vn_to_en(self, text: str) -> str:
-        outputs = self.translate_model.generate(
-            self.tokenizer(
-                f"en: {text}", return_tensors="pt", padding=True
-            ).input_ids.to("cpu"),
-            max_length=256,
-        )
-        return self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
+        # outputs = self.translate_model.generate(
+        #     self.tokenizer(
+        #         f"en: {text}", return_tensors="pt", padding=True
+        #     ).input_ids.to("cpu"),
+        #     max_length=256,
+        # )
+        # return self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
+        t = TranslationEngine(key=os.environ["GOOGLE_API_KEY"])
+        res = t.translateToVi(text)
+        return res
 
     def PIPE_LINE(self, question: str):
         pubmed_queries, article_ids = self.search_pubmed(
