@@ -3,7 +3,7 @@ export const LogoIcon = () => {
     <img
       src="/RMIT_logo_red.png"
       alt="rmit-logo"
-      className="h-6 w-6 inline-block scale-[180%]"
+      className="h-6 w-6 inline-block"
     />
   );
 };

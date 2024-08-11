@@ -70,7 +70,7 @@ const InitChatState: React.FC<InitChatStateProps> = ({
     <div className="w-full h-screen flex flex-col px-8 py-4 overflow-auto">
       <div className="w-full h-full">
         <div className="my-auto h-fit w-full flex flex-col items-center gap-4 mt-8">
-          <img src="/RMIT_logo_red.png" alt="" className="h-40 w-40" />
+          <img src="/RMIT_logo_red.png" alt="" className="h-36 w-36" />
           <h1 className="text-2xl font-bold">Precise Medical Information</h1>
           <h1 className="text-xl font-medium opacity-75 mt-8">
             Example questions:

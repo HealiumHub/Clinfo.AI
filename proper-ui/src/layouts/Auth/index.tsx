@@ -15,7 +15,7 @@ const Auth = () => {
   const handleLogIn = () => {
     window.localStorage.setItem("isAuth", "true");
 
-    navigate("/");
+    navigate("/dashboard");
   };
 
   return (

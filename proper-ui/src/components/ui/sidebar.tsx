@@ -95,6 +95,10 @@ export const DesktopSidebar = ({
         animate={{
           width: animate ? (open ? "300px" : "60px") : "300px",
         }}
+        transition={{
+          duration: 0.15,
+          ease: "easeInOut",
+        }}
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
         {...props}
@@ -120,11 +124,10 @@ export const MobileSidebar = ({
         {...props}
       >
         <div className="flex justify-end z-20 w-full">
-          {/* <IconMenu2
-            
+          <Menu
+            className="text-neutral-800 dark:text-neutral-200"
             onClick={() => setOpen(!open)}
-          /> */}
-          <Menu className="bg-red-500" onClick={() => setOpen(!open)} />
+          />
         </div>
         <AnimatePresence>
           {open && (
@@ -133,7 +136,7 @@ export const MobileSidebar = ({
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: "-100%", opacity: 0 }}
               transition={{
-                duration: 0.3,
+                duration: 0.2,
                 ease: "easeInOut",
               }}
               className={cn(
