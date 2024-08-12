@@ -1,11 +1,8 @@
 import os
 
 # Make Sure you followed at least step 1-2 before running this cell.
-from config import EMAIL, GOOGLE_API_KEY, NCBI_API_KEY, OPENAI_API_KEY
 from src.clinfoai.pubmed_engine import PubMedNeuralRetriever
 
-os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
-os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 PROMPS_PATH = os.path.join(
     ".", "src", "clinfoai", "prompts", "PubMed", "Architecture_1", "master.json"
 )
@@ -16,8 +13,8 @@ nrpm = PubMedNeuralRetriever(
     model=MODEL,
     verbose=False,
     debug=False,
-    open_ai_key=OPENAI_API_KEY,
-    email=EMAIL,
+    open_ai_key=os.getenv("OPENAI_API_KEY", ""),
+    email=os.getenv("EMAIL", ""),
 )
 
 
@@ -36,7 +33,6 @@ def search_articles(question: str):
 def post_process_answer(summary: str) -> str:
     summary = summary.replace("TL;DR:", "**TL;DR:**")
     summary = summary.replace("Literature Summary:", "**Literature Summary:**")
-
 
     # Trick lord, refs are added via prompt, not sure impact of changing prompt to quality yet
     # -> So I'll rule-based cut all References out.

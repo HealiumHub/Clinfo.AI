@@ -1,21 +1,25 @@
 import sys
 import os
 from pathlib import Path
+
 sys.path.append(str(Path.cwd().parent))
-from config import GOOGLE_API_KEY, NCBI_API_KEY, EMAIL
 from src.clinfoai.pubmed_engine import PubMedNeuralRetriever
+
 # Set your Google API key here
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 
 # Import and configure the Gemini API
 import google.generativeai as genai
+
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
 # Define the model to use
 MODEL = "gemini-1.5-flash"
 
 # Path to the prompts configuration
-PROMPS_PATH = os.path.join("..", "src", "clinfoai", "prompts", "PubMed", "Architecture_1", "master.json")
+PROMPS_PATH = os.path.join(
+    "..", "src", "clinfoai", "prompts", "PubMed", "Architecture_1", "master.json"
+)
 
 # Initialize the PubMed Neural Retriever with the Gemini model
 nrpm = PubMedNeuralRetriever(
@@ -23,8 +27,10 @@ nrpm = PubMedNeuralRetriever(
     model=MODEL,
     verbose=False,
     debug=False,
-    open_ai_key=GOOGLE_API_KEY,  # Use Google API key for the Gemini model
-    email=EMAIL
+    open_ai_key=os.getenv(
+        "GOOGLE_API_KEY", ""
+    ),  # Use Google API key for the Gemini model
+    email=os.getenv("EMAIL", ""),  # Use the email address for the Gemini model
 )
 
 # Define the question
@@ -32,9 +38,7 @@ QUESTION = "What is the prevalence of COVID-19 in the United States?"
 
 # Step 1: Search PubMed
 pubmed_queries, article_ids = nrpm.search_pubmed(
-    question=QUESTION,
-    num_results=10,
-    num_query_attempts=1
+    question=QUESTION, num_results=10, num_query_attempts=1
 )
 
 print(f"Articles retrieved: {len(article_ids)}")
@@ -45,7 +49,7 @@ print(article_ids)
 # Previously, we only extracted the PMIDs. Now we will use those PMIDs to retrieve the metadata:
 articles = nrpm.fetch_article_data(article_ids)
 
-# Print example for the first article: 
+# Print example for the first article:
 article_num = 1
 print(f"\nArticle {article_num}:\n")
 print(articles[article_num]["MedlineCitation"]["Article"]["Abstract"]["AbstractText"])

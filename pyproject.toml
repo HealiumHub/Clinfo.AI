@@ -29,7 +29,9 @@ uvicorn = "^0.30.5"
 fastapi = "^0.112.0"
 python-dotenv = "^1.0.1"
 llama_index="0.10.64"
-
+poetry-plugin-dotenv = "^2.2.3"
+[tool.poetry.plugins.dotenv]
+location = ".env"
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"

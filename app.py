@@ -6,7 +6,6 @@ from fastapi.responses import JSONResponse
 
 
 # Make Sure you followed at least step 1-2 before running this cell.
-from config import GOOGLE_API_KEY, OPENAI_API_KEY
 from models import Payload
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -28,10 +27,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-
-os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
-os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 
 
 @app.post("/search")

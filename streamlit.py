@@ -4,10 +4,10 @@ import streamlit as st
 from src.clinfoai.pubmed_engine import PubMedNeuralRetriever
 
 # Make Sure you followed at least step 1-2 before running this cell.
-from config import OPENAI_API_KEY, NCBI_API_KEY, EMAIL, GOOGLE_API_KEY
 
-os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
-os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+
 PROMPS_PATH = os.path.join(
     ".", "src", "clinfoai", "prompts", "PubMed", "Architecture_1", "master.json"
 )
