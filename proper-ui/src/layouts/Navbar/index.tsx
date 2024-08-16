@@ -1,5 +1,8 @@
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
+import { HoveredLink, Menu, MenuItem, ProductItem } from '@/components/ui/navbar-menu';
+import { cn } from '@/lib/utils';
+import { useState } from 'react';
 import { Link } from "react-router-dom";
 
 const NAV_ITEMS = [
@@ -21,19 +24,18 @@ const NAV_ITEMS = [
   },
 ];
 
-const Navbar = () => {
+const Navbar = ({ className }: { className?: string }) => {
+  const [active, setActive] = useState<string | null>(null);
   return (
     <div className="w-fit fixed top-3 left-1/2 -translate-x-1/2 z-50 isolate">
-      <div className="flex justify-center gap-2 bg-primary py-2 px-8 rounded-lg">
+      <div className="flex justify-center gap-2 bg-background py-2 px-8 rounded-lg">
         {NAV_ITEMS.map((item, index) => (
           <Link to={item.href} key={index + item.href}>
             <Button
-              variant={`${
-                index === NAV_ITEMS.length - 1 ? "secondary" : "default"
-              }`}
-              className={`hover:scale-110 transition-all ${
-                index === NAV_ITEMS.length - 1 ? "rounded-lg" : ""
-              }`}
+              variant={`${index === NAV_ITEMS.length - 1 ? "secondary" : "default"
+                }`}
+              className={`hover:scale-110 transition-all ${index === NAV_ITEMS.length - 1 ? "rounded-lg" : ""
+                }`}
             >
               {item.label}
             </Button>

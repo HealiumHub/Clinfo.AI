@@ -1,14 +1,6 @@
-import { ArrowLeft, MessageSquare, Settings, UserIcon } from "lucide-react";
+import { ArrowLeft, LayoutDashboard, MessageSquare, Settings, UserIcon } from "lucide-react";
 
-export const links = [
-  {
-    label: "Chat",
-    href: "/dashboard/chat",
-    icon: (
-      <MessageSquare className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-      // <IconBrandTabler className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-    ),
-  },
+export const userLinks = [
   {
     label: "Profile",
     href: "#",
@@ -35,5 +27,15 @@ export const links = [
 
       // <IconArrowLeft className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
     ),
+  },
+]
+
+export const links = [
+  {
+    label: "Workspace",
+    href: "/dashboard/workspace",
+    icon: (
+      <LayoutDashboard />
+    )
   },
 ];
