@@ -1,0 +1,338 @@
+
+==== Front
+J Clin Med
+J Clin Med
+jcm
+Journal of Clinical Medicine
+2077-0383
+MDPI
+
+10.3390/jcm12051882
+jcm-12-01882
+Article
+Specific Learning Disabilities and Emotional-Behavioral Difficulties: Phenotypes and Role of the Cognitive Profile
+https://orcid.org/0000-0003-4258-7965
+Cristofani Paola Conceptualization Methodology Investigation Data curation Writing – original draft 1
+https://orcid.org/0000-0003-3874-3611
+Di Lieto Maria Chiara Conceptualization Methodology Formal analysis Resources Writing – original draft 1*
+Casalini Claudia Writing – original draft Writing – review & editing Supervision 1
+https://orcid.org/0000-0002-7857-7884
+Pecini Chiara Methodology Formal analysis Data curation Writing – original draft Supervision 2
+Baroncini Matteo Investigation Data curation Writing – original draft 1
+Pessina Ottavia Methodology Data curation 3
+Gasperini Filippo Formal analysis Investigation Writing – review & editing 1
+Dasso Lang Maria Bianca Investigation Writing – review & editing 1
+Bartoli Mariaelisa Writing – review & editing 1
+Chilosi Anna Maria Conceptualization Methodology Writing – review & editing Supervision 1
+Milone Annarita Conceptualization Methodology Writing – review & editing Supervision 1
+Franco-Martin Manuel A. Academic Editor
+1 Department of Developmental Neuroscience, IRCCS Fondazione Stella Maris, 56128 Pisa, Italy
+2 Department of Education, Languages, Intercultures, Literatures and Psychology, University of Florence, 50121 Firenze, Italy
+3 Department of Clinical and Experimental Medicine, University of Pisa, 56126 Pisa, Italy
+* Correspondence: mariachiara.dilieto@fsm.unipi.it; Tel.: +39-050886111
+27 2 2023
+3 2023
+12 5 188224 1 2023
+20 2 2023
+22 2 2023
+© 2023 by the authors.
+2023
+https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+Specific Learning Disabilities (SLD) are often associated with emotional-behavioral problems. Many studies highlighted a greater psychopathological risk in SLD, describing both internalizing and externalizing problems. The aims of this study were to investigate the emotional-behavioral phenotype through the Child Behavior Checklist (CBCL), and evaluate the mediating role of background and cognitive characteristics on the relationship between CBCL profile and learning impairment in children and adolescents with SLD. One hundred and twenty-one SLD subjects (7–18 years) were recruited. Cognitive and academic skills were assessed, and parents completed the questionnaire CBCL 6–18. The results showed that about half of the subjects manifested emotional-behavioral problems with a prevalence of internalizing symptoms, such as anxiety and depression, over externalizing ones. Older children showed greater internalizing problems than younger ones. Males have greater externalizing problems compared to females. A mediation model analysis revealed that learning impairment is directly predicted by age and familiarity for neurodevelopmental disorders and indirectly via the mediation of the WISC-IV/WAIS-IV Working Memory Index (WMI) by the CBCL Rule-Breaking Behavior scale. This study stresses the need to combine the learning and neuropsychological assessment with a psychopathological evaluation of children and adolescents with SLD and provides new interpretative insights on the complex interaction between cognitive, learning, and emotional-behavioral phenotypes.
+
+specific learning disabilities
+emotional-behavioral manifestation
+child behavior checklist-CBCL
+learning impairment
+working memory
+cognitive profile
+IRCCS Stella Maris Foundation (Ricerca Corrente 2019, and the 5 × 1000 voluntary contributions, Italian Ministry of Health)This work has been partially supported by grant from the IRCCS Stella Maris Foundation (Ricerca Corrente 2019, and the 5 × 1000 voluntary contributions, Italian Ministry of Health).
+==== Body
+pmc1. Introduction
+
+Specific Learning Disabilities (SLD) are neurodevelopmental disorders characterized by difficulties in reading, writing, and/or mathematics skills in parallel with average intelligence and adequate educational and sociocultural opportunities, which occur in the absence of sensory, neurologic, or other psychiatric disorders [1]. On average, 5–15% of students are diagnosed with SLD, such as Dyslexia, Dyscalculia, Dysgraphia, and Dysorthography [1]. SLD persist despite normal schooling and can interfere with school education and daily life by having an impact on academic achievement, relational experiences, and quality of life. Furthermore, SLD can be characterized by the coexistence of emotional and behavioral problems [2,3,4,5,6,7]. In fact, a relevant feature of SLD is comorbidity [8,9]: It frequently happens to encounter the coexistence not only of several types of SLD (“homotypic comorbidity”), but also of other neurodevelopmental disorders or clinical conditions (“heterotypical comorbidity”) in the same subject [10].
+
+The comorbidity between SLD and emotional-behavioral disorders is high: About 30% of children with SLD have emotional and behavioral problems [11], whose phenomenology can be very heterogeneous and is often described in terms of both internalizing and externalizing disorders [12]. From an empirical point of view of child behavior classification, anxiety, depression, social withdrawal, and somatic complaints are conceptualized as internalizing problems, while disinhibited or externally-focused behavioral symptoms, including aggression, conduct problems, rule breaking behavior, oppositionality, hyperactivity, are conceptualized as externalizing problems [13]. For what concerns internalizing symptoms, children with SLD show a higher rate of separation anxiety and generalized and social anxiety compared to children who do not have SLD problems [6]. Moreover, dyslexic children report higher levels of somatic symptoms [3] and depressive symptomatology [14]. Regarding externalizing symptoms, both oppositional defiant [15] and conduct disorders [16] have been reported in SLD. However, the highest comorbidity is with Attention Deficit Hyperactivity Disorder (ADHD) [17,18], occurring between 25% and 45% of SLD cases [19,20].
+
+The interaction between emotional-behavioral functioning and learning difficulties is very complex and its explanation calls into question several hypotheses.
+
+The association between SLD and emotional-behavioral disorders can be traced back to a causal role of the former on the latter (e.g., school failure causes emotional distress in the student) but also of the latter on the former (e.g., a subject with emotional-behavioral problems does not work hard in learning tasks, caused by different factors, such as reduced motivation, low tolerance to frustration or resistance to stress, impulsiveness). Therefore, SLD can be hypothesized as a risk factor for high levels of internalizing and externalizing symptoms, which might be considered a consequence of SLD themselves, deriving from the impact of the disorder on the mental health of SLD subjects [21]. Moreover, emotional-behavioral disorders can be hypothesized as a risk factor for SLD too.
+
+However, the concept of comorbidity contemplates the idea that different clinical conditions arise together without any causal link between them and may be the expression of a more general malfunction that shares a common neuropsychological substrate. In this regard, the hypothesis of the “Multiple Deficit Model” [21] suggests that disorders are linked together by multiple factors, some specific to a given disorder while others are in common, and they can derive from the interaction between several risk factors [8]. Indeed, the interaction between SLD and emotional-behavioral problems seems mediated by a series of biological, cognitive, and environmental factors that document the role of many distinct and shared aspects. Willcutt and Pennington [3] found a close relationship between reading disorders and externalizing disorders in males, while females show more internalizing symptoms and, specifically, they report more depressive and somatic symptoms than males. The association between SLD and emotional difficulties seems to be mediated also by age: For example, Giovagnoli and colleagues [22] found higher levels of internalizing symptoms in schoolers with developmental dyslexia, specifically, school anxiety in those children who attended secondary school compared to the primary ones. The age of diagnosis also influences the emotional-affective aspect. An early diagnosis allows the activation of more effective coping strategies for the disorder with positive effects on self-esteem and sense of self [23]. The absence of an adequate diagnosis represents a negative aspect as the person reports a sense of inability [24]. Evidence in the literature shows that children identified later as dyslexics report greater feelings of low self-esteem and fear of judgment [25]. At the same time, self-esteem seems to be higher in the presence of an early diagnosis of dyslexia [26].
+
+Furthermore, there are still relatively few studies investigating the relationship between the cognitive and neuropsychological profile and the presence of internalizing and externalizing symptoms in SLD. Mugnaini and collaborators [27] report that a borderline cognitive level in subjects with dyslexia represents a risk factor for the presence of internalizing problems. Some further studies examined the association between cognitive profile and emotional difficulties in poor reader children without a clear diagnosis of SLD. Nachshon and Horowitz-Kraus [28] demonstrated the relationship between low reading scores, emotional abilities, and executive functions (such as speed of processing, inhibition, visual attention, and switching abilities). Another cognitive factor mediating the interaction between SLD and emotional-behavioral problems is the presence of language impairment (assessed in 20% of preschool-aged children with reading disorders) [29]. It is well-known that language disorders, besides being a risk factor for the development of literacy difficulties [30,31], seem to be a precursor for the development of emotional and behavioral problems [32,33,34,35].
+
+Moreover, some studies report that even the extent of learning difficulties could be associated with different manifestations of emotional-behavioral difficulties. Prior and collaborators [12] found that impairment of a single learning domain is usually associated with internalizing disorders, while the presence of impairment of multiple learning domains is more frequently associated with externalizing disorders.
+
+In summary, the interaction between emotional-behavioral functioning and learning difficulties in SLD could be complex and affected by multiple risk factors. Thus, further investigations are needed in order to shed light on the characteristics of the emotional-behavioral disorders in subjects with SLD and on the mediator role of several other factors, such as cognitive and background factors. Specifically, it would be appropriate to better understand how these factors influence the relationship between emotional and behavioral clinical manifestations and learning disorders. Such knowledge will allow better understanding of the symptom manifestation and severity of the clinical picture of children with SLD to better support the clinical management of these disorders [10,36].
+
+Our study is part of this line of research with a dual purpose: (a) To describe the psychopathological profile of a clinical sample of subjects with SLD, (b) to investigate the mediator role of sex, age, and cognitive indices on the relationship between emotional and behavioral manifestations and learning impairment in children and adolescents with SLD. According to the literature, we hypothesize individuals with SLD show more internalizing than externalizing problems. Furthermore, regarding individual background factors, based on previous studies, we expect that males have more externalizing symptoms than females and that older age is associated with more internalizing symptoms.
+
+2. Materials and Methods
+
+2.1. Participants
+
+The study included 121 subjects (73 males and 48 females, age range: 7–18 years, mean age: 11.9 ± 3.03 years) with SLD diagnosis, in accordance with the international diagnostic classification criteria [1,37] and the Italian Clinical Recommendations on SLD [38], recruited from the Specific Learning Disorder Reference Centre of the Stella Maris Foundation Hospital (Pisa, Italy). The recruitment of participants was conducted within the standard clinical care of the service, and no additional compensation was required.
+
+Criteria for participants’ inclusion [1,38] were: (i) Age between 7 and 18 years old, (ii) second grade of primary school onward, (iii) absence of severe hearing and/or visual deficits, epilepsy, cerebral palsy, encephalitis or other major neurological abnormalities or neurodevelopmental disorders such as autism spectrum disorder, intellectual disabilities, and genetic syndromes.
+
+All the selected subjects had the following results at the assessment carried out with standardized instruments:Both Perceptual Reasoning Index (PRI) and Verbal Comprehension Index (VCI) at the WISC-IV or WAIS-IV intelligence scales [39,40,41,42] within 1.5 standard deviation (SD) from the mean;
+
+A deficient score (z score ≤−2 or percentage rank ≤5°) in at least two reading aloud tests and/or dictation test and/or mathematics test.
+
+Based on DSM-5 criteria, SLD can affect one or more of the following academic domains: Reading decoding, as in the case of Developmental Dyslexia, written expression or mathematics, as in the case of Developmental Dysorthography or Dyscalculia, respectively [1]. When mathematics difficulties were associated with both reading and spelling disorders, usually the most frequently encountered in clinical practice, a diagnosis of “Mixed Disorder of Scholastic Skills” was given [43].
+
+Age of first diagnosis ranged from about 7 to 18 years and correlated with chronological age (r(120) = 0.72, p < 0.001), indicating that the older subjects examined in the study were being diagnosed for the first time, receiving a later diagnosis. Forty-nine percent of the participants were attending primary school (third, fourth, and fifth grade), 27% the middle school, and 24% high school. Twenty-two percent of children (26/121) had a previous psychopathological diagnosis: 10 children (8%) presented ADHD, 14 children had anxiety or depressive problems, and for 2 children the emotional-behavioral problems were not specified. All subjects were native Italian speakers of Caucasian ethnicity. This research project was approved by the Paediatric Ethics Committee of Tuscany. All parents gave written consent for their son or daughter’s participation and for publication of the results.
+
+2.2. Assessment Procedure
+
+Parents completed the Child Behavior Checklist (CBCL) [44,45], an anamnestic interview and a questionnaire on early development [46].
+
+Each child was individually assessed by intelligence and learning tests in a quiet room with adequate lighting and a comfortable seat.
+
+2.2.1. Child Behavior Checklist (CBCL)
+
+The presence and type of emotional and behavioral problems were explored through the Italian version of the CBCL [47,48,49]. It is a standardized scale of 118 items to be completed by the parents of children and adolescents aged between 6 and 18 years. Each item was scored on a 3-step response scale (completely agree, I do not know, completely disagree) and the items were aggregated in 8 main syndrome subscales (Anxious/Depressed, Withdrawn/Depressed, Somatic Complaints, Social Problems, Thought Problems, Attention Problems, Rule-Breaking Behaviors, Aggressive Behaviors) and six DSM-oriented sub-scales (Affective Disorder, Anxiety Disorder, Somatic Problems, Attention Deficit/Hyperactivity Problems, Oppositional Defiant Problems, Conduct Problems).
+
+All raw scores for each CBCL scale and subscale were expressed as T scores (mean: 50; SD: 10) with respect to the age and sex norms using Achenbach’s normative data [44]. T-scores below 64 were considered normal, those between 65 and 69 in the borderline range, and those higher than 70 were in the clinical range. Three composite syndrome scales were also computable: Internalizing scale (sum of Anxious/Depressed, Withdrawn/Depressed, and Somatic Complaints), Externalizing scale (sum of Aggressive Behavior and Rule-Breaking Behavior), and Total Problem scale (sum of all syndrome subscales). For all composite scales, T-score ranges for all composite scales were as follows: Below 59 was considered normal, between 60 and 63 was borderline, and higher than 64 was clinical. Moreover, the Child Behavior Checklist Dysregulation Profile (CBCL-DP) was assessed using the sum of T-scores of the following CBCL subscales: Anxious/Depressed, Attention Problems, and Aggressive Behavior syndrome [45,50]. The combination of behavioral, affective, and cognitive dysregulation measured by the CBCL-DP was associated with an increased likelihood of psychopathology and psychosocial impairment in childhood [51]. The clinical CBCL-DP score range was ≥210.
+
+2.2.2. Intelligence
+
+The Wechsler Intelligence Scale for Children–Fourth Edition (WISC-IV) [39] and the Wechsler Intelligence Scale for Adults–Fourth Edition (WAIS-IV) [40] were administered to evaluate the subjects’ cognitive profiles. The scales provided a full-scale IQ (FIQ) and four composite scores relating to specific cognitive abilities: (a) The Verbal Comprehension Index (VCI) measured the use and understanding of language and evaluated abstraction skills, generalization, practical reasoning, and long-term memory recovery, (b) the Perceptual Reasoning Index (PRI) assessed nonverbal reasoning and problem-solving and the ability to collect, organize, and interpret visual data to solve complex cognitive problems, (c) the Working Memory Index (WMI) measured subject’s ability to recall and manipulate auditory information in short-term memory, (d) the Processing Speed Index (PSI) included timed activities that required the analysis of visual material, visual perception, and visual scanning and hand-eye coordination. Normative data and psychometric properties for the Italian population are available [41,42].
+
+2.2.3. Academic Abilities
+
+The academic abilities were assessed by reading decoding and comprehension, writing, and arithmetic tests described below.
+
+Reading decoding was individually evaluated through tests of reading aloud a passage with a 4-min time limit [52,53,54], and words and non-words [54,55]. In each test, both decoding speed (i.e., in syllables for second), later expressed as z scores with reference to normative values, and accuracy (i.e., number of errors), converted to percentile rank, were computed and converted on a 3-point scale (Deficient, Borderline and Normal).
+
+Reading comprehension was assessed through a text comprehension test, in which the subject had to answer 10 multiple-choice questions, each with four alternatives, after reading a story silently with no time limit [52,53,54]. The number of correct responses was transformed into ordinal scores on a 4-point scale (Deficient, Borderline, Within Average, and Optimal) based on normative values.
+
+As for writing skills, they were investigated through the writing under dictation of a brief passage [54,56] and of twelve sentences containing words with unpredictable spelling only on the basis of Italian phoneme-to-grapheme correspondence rules [55]. For each test, the total number of spelling errors was computed and converted to a percentile rank according to normative value. Each percentile rank was transformed into an ordinal score on a 3-point scale (Deficient, Borderline, and Normal).
+
+Finally, also arithmetic abilities were evaluated through standardized tests [54,57]. For each test, we converted the scores to a percentile rank according to normative value and transformed them into ordinal scores on a 3-point scale (Deficient, Borderline, and Normal).
+
+2.3. Statistical Analysis
+
+Statistical Package for Social Sciences, version 22.0 (IBM SPSS Statistics, IBM Corporation, Armonk, NY, USA) was used for statistical analyses. For missing data, case-wise deletion was applied.
+
+Given the use of ordinal scales for the academic tests, the learning profile, and the effect of familiarity for neurodevelopmental disorder, SLD type, and sex were investigated through the non-parametric Mann–Whitney and Wilcoxon tests. Accordingly, the relation between performances at the academic tests and chronological age was investigated by non-parametric Spearman correlation.
+
+Because of only moderate deviations from normality for the WISC-IV indices and the CBCL scales (value for both skewness and kurtosis were between −1 and +1 for each of these variables, with only 1 exception out of 19) [58] and the “robustness” of the ANOVA to non-normality of data distribution [59], parametric analyses were performed. Sphericity of data was evaluated through Muchly’s test, and in those cases where it was not confirmed, Epsilon correction on degrees of freedom of both numerator and denominator was adjusted in order to maintain the F statistic valid.
+
+The presence of discrepancies within the cognitive and psychopathological profile, respectively, was investigated by descriptive statistics and repeated Measures ANOVAs, with Bonferroni post-hoc corrections for multiple comparisons on the Wechsler indices and the CBCL scales and subscales.
+
+The effect of sex, familiarity for neurodevelopmental disorder, and SLD type on the scores at the Wechsler and CBCL scales and subscales was assessed through a series of between-groups ANOVAS. In order to account for potential inflation of the Type I error, Bonferroni adjusted alpha levels were used for each set of comparisons. For each of the performed ANOVAs, the effect size for the independent variable was measured by calculating Partial Eta Squared statistics.
+
+Parametric correlation (Pearson) and regression analyses were used to investigate whether demographic and cognitive scores correlated and predicted inter-subject variability at the CBCL and learning profiles.
+
+Based on the results from the regression analysis, we tested a mediation model (SPSS; Process v. 4.0, Model 4) on the relationship between the main background, cognitive, learning, and emotional-behavioral variables.
+
+3. Results
+
+3.1. Academic and Cognitive Profile
+
+Descriptive statistics of the score range obtained at the academic test are reported in Table 1. The SLD type included Developmental Dyslexia and/or Dysorthography (51%, 62/121), Developmental Dyscalculia (6%, 8/121), and Mixed SLD (42%, 51/121). The group with Mixed SLD showed a higher (z = −5.65, p < 0.001) median impairment than the groups with isolated SLD (Dyslexia, Dysorthography, or Dyscalculia).
+
+Cognitive characteristics of the SLD sample are reported in Table 2. Missing data concern the cognitive assessment conducted in another clinical center. In particular, all cognitive scores for three subjects, the WMI and PSI scales for three children, and the CVI scale for one child were not available.
+
+A significant difference across WISC-IV indices was found (F(3, 339) = 49.52, p < 0.001), with a large effect-size (Partial Eta Squared = 0.30). Post-hoc analyses revealed the absence of significant differences between VCI and PRI, while significant better performances were found for both VCI and PRI with respect to both WMI and PSI (p < 0.05). A significant difference between WMI and PSI was also found in favor of the latter (p < 0.05) (VCI = PRI > PSI > WMI). In the appendix (Table S1), t statistics for Bonferroni post-hoc corrections are reported.
+
+Accordingly, borderline (<85) or deficient (<70) indexes were recorded in 53% of the sample at the WMI, 43% at the PSI, 12% at the VCI, and 6% at the PRI.
+
+3.2. Behavioral and Emotional Characteristics
+
+As shown in Figure 1, scores in the Internalizing syndrome scale were significantly higher than in the Externalizing syndrome scales (t(120) = 7.69, p < 0.001). Five percent (6/121) of the children presented CBCL DP scores within the clinical range. Partial Eta Squared was 0.33, indicating a large effect size for the general type of symptoms.
+
+Forty-eight percent of the children (58/121) showed borderline or clinical range scores in one or both CBCL syndrome composite scales. Specifically, on the Internalizing syndrome scale, 33% of the children (40/121) had scores in the borderline (7/40) or clinical range (33/40). On the Externalizing syndrome scale, 16% of the children (20/121) had scores in the borderline (12/20) or clinical (8/20) range.
+
+On the Total Problem syndrome scale, 22% (27/121), showed clinical and 12% (15/121) borderline range scores.
+
+A significant difference across the eight syndrome subscales was found (F(6, 672) = 28.32, p < 0.001) in the CBCL syndrome subscales. Partial Eta Squared was 0.14, indicating a large effect size. Post-hoc comparisons revealed that Anxious/Depressed, Withdrawn/Depressed, and Social Problems subscales had significantly higher scores than the Thought Problems, Rule Breaking Behavior, and Aggressive Behavior subscales (p < 0.05).
+
+The Attention Problem subscale had significantly higher scores than Rule-Breaking Behavior and Aggressive Behavior subscales (p < 0.05) (Anxious/Depressed = Withdrawn/Depressed = Social Problems > Thought Problems = Rule Breaking Behavior = Aggressive Behavior, Attention Problem > Rule Breaking Behavior = Aggressive Behavior). In the appendix (Table S2), t statistics for Bonferroni post-hoc corrections are reported.
+
+Accordingly, as shown in Figure 2, scores in the borderline or clinical range were found in 19% (23/121) of the patients in the Anxious/Depressed subscale, 15% (18/121) in the Withdrawn/Depressed, 15% (18/121) in the Attention Problems subscale, 12% (14/121) in the Somatic Complaints, 11% (13/121) in the Social Problems, 10% (12/121) in the Thought Problems subscales, 4% (5/121) in the Rule Breaking Behaviors, and 3% (4/121) in the Aggressive Behaviors subscales.
+
+A significant difference across the DSM-oriented sub-scales emerged (F(4, 468) = 27.20, p < 0.001), with a large effect-size (Partial Eta Squared = 0.18). Post-hoc comparisons revealed that Anxiety Problem subscale showed significantly higher scores than all the other subscales (p < 0.05), Affective Problem subscale mean score was significantly higher than the mean scores in Somatic Problems (p < 0.05), Oppositional Defiant Problems (p < 0.05), and Conduct Problems (p < 0.05) subscales. Attention Deficit/Hyperactivity Problem subscale had significantly higher scores than Oppositional Defiant Problems (p < 0.05) and Conduct Problems (p < 0.05) subscales (Anxiety Problem > all subscales, Affective Problem > Somatic Problem = Oppositional Defiant Problems = Conduct Problems, Attention deficit/Hyperactivity problem > Oppositional Defiant Problems = Conduct Problems). In the appendix (Table S3), t statistics for Bonferroni post-hoc corrections are reported.
+
+At DSM-oriented sub-scales, scores in the borderline or clinical range were found in 25% (30/121) of patients in Anxiety Problems subscale, 15% (18/121) in the Affective Problem, 11% (13/121) Attention Deficit/Hyperactivity problem subscales, 7% (8/121) Somatic Problem subscale, 3% (4/121) in Conduct Problem Oppositional, and 3% (4/121) in Defiant Problems sub-scales (Figure 3).
+
+3.3. Relationships and Interactions among the Background, Learning, Cognitive, and Emotional Characteristics
+
+3.3.1. Relationship with the Background Characteristics
+
+Sex did not affect learning scores, either in terms of the median score of impairment or the number of impairments across measures (z < 1, n.s.). Age significantly correlated with the median impairment score (rho(121) = −0.19, p = 0.02) as higher age corresponded to lower impairment. The group with a positive familiarity for neurodevelopmental disorders (26/121, 22%) showed a higher median impairment than that one with a negative familiarity (z = −2.4, p < 0.05).
+
+No effects of sex, age, or familiarity for neurodevelopmental disorders were found on the cognitive indexes.
+
+Regarding the CBCL scores, worse scores were found in males than females in the Attentional Problems (F(1, 121) = 7.1, p < 0.001) and Rule-Breaking Behaviors (F(1, 121) = 6.08, p < 0.01) CBCL subscales. No significant effect of familiarity for neurodevelopmental disorders was found on any CBCL scales and subscales. Higher scores at the Withdraw, Somatic Complaints, and Internalizing scales were associated with higher chronological age (r ranging from 0.18 to 0.26, p < 0.05).
+
+3.3.2. Relationship with the Cognitive Profile
+
+Subjects with Mixed SLD showed lower scores in the intelligence indexes, with the exception of PRI, than those with an isolated SLD (IQ: F(1, 113) = 17.3, p < 0.001; VCI: F(1, 113) = 10.4, p < 0.005; PRI: F(1, 113) = 3.11, ns; WMI: F(1, 113) = 12.9, p < 0.001; PSI: F(1, 113) = 8.02, p < 0.01). Regression analysis, with Intelligence Indexes (VCI, PRI, WMI, PSI) as predictors and median learning impairment as outcome variable, showed that the intelligence profile of the child significantly predicted the learning impairment (R2 = 0.34, F(4, 113) = 3.7, p < 0.001), although only the WMI resulted in being a significant predictor (beta = −0.24, t = −2.41, p < 0.005).
+
+Correlational analysis between Intelligence Indexes (i.e., VCI, PRI, WMI, PSI) and CBCL scores showed a significant relationship between WMI and scores in the Rule-Breaking subscale (r = −0.30, p < 0.001).
+
+Based on the obtained results, a mediation model analysis was run on the median learning impairment as a dependent variable. As shown in Figure 4, learning impairment is predicted by age and familiarity for neurodevelopmental disorders and, indirectly, via the mediation of the Working Memory Index by the Rule-Breaking Behavior scale.
+
+4. Discussion
+
+Specific Learning Disabilities (SLD) are clinical conditions in which difficulties in specific academic areas (reading, writing, and/or mathematics) present high comorbidity with emotional-behavioral disorders. In the literature, the presence of psychopathological difficulties in subjects with SLD varies from about 30% [11] to 70% [60]. The presence of emotional-behavioral problems in SLD could be associated with a series of biological, cognitive, and environmental factors, such as the severity of symptomatology, the late diagnosis, the cognitive level border, the age, and the male sex [3,22,24,27]. However, the number of studies examining these aspects is scarce, thus the type of relationship between these factors and the presence of internalizing and externalizing symptoms in subjects with SLD have to be further investigated.
+
+This study was aimed at investigating the presence and the typology of emotional and behavioral problems in a sample of subjects with SLD and the factors mediating the relationship between learning impairment and psychopathological symptoms. For this purpose, we described the psychopathological profiles at the CBCL [44,45] and their relation with cognitive, learning, and background variables in a sample of 121 children and adolescents with SLD.
+
+The profiles found within the learning, cognitive, and emotional-behavioral areas confirmed and extended the results of previous studies. Regarding the learning profile, it was confirmed that subjects with Mixed SLD or familiarity for neurodevelopmental disorders had higher median impairment than those with isolated SLD disorder or absence of familiarity [17,61]. In addition to previous results, it was found that age was related to learning impairment, as the younger subjects showed worse performances if compared to the older ones. Given that in the present study, the chronological ages correspond to the age of first diagnosis, this result suggests that subjects with milder symptoms require clinical consultation later.
+
+Concerning the WISC-IV/WAIS-IV cognitive profile, Working Memory and Processing Speed Indices were worse than both Verbal Comprehension and Perceptual Reasoning Indices, as shown in the literature [62]. Indeed, impairment of working memory and speed of processing characterized nearly half of the sample, 53% and 43%, respectively. Several studies also documented the influence of working memory and speed of processing on learning disorders and the predictive role of working memory on the degree of learning deficit [63]. In our results, cognitive profiles explain almost 34% of the learning impairment, and the Working Memory Index was a significant predictor.
+
+The analysis of the results of the CBCL showed that about half (48%) of the SLD subjects manifested emotional-behavioral symptoms with a prevalence of internalizing (33%), such as anxiety and depression, over externalizing (16%) disorders. The incidences found are similar to those reported in the literature in SLD [3,60] and higher than in typical development [64,65]. Despite this result, CBCL was not directly related to cognitive profile and learning measures.
+
+The present study enriches the previous literature by investigating the role of cognitive and background characteristics on the emotional-behavioral phenotypes and their relationship with the learning profile in SLD.
+
+Chronological age represents a crucial factor for the display of internalizing problems in SLD subjects: In fact, the manifestation of internalizing symptoms, particularly withdrawal and somatic problems, tends to increase with age. As older subjects showed a milder learning impairment, that result supports further that there is not a direct relationship between learning and internalizing problems in SLD. In adolescence, a learning problem can have a greater impact on mood even in cases of milder disorders and probably the late diagnosis could have exposed the subject to a longer history of school failure, with consequent repercussions on the self-esteem. Sex and cognitive characteristics represent a crucial factor for the expressiveness of externalizing problems: Attentional problems and rule-breaking behaviors are higher in males than females, and emotional problems are related to higher working memory impairment [3,24,28].
+
+One other main contribution of the present study came from the mediation model analysis. Learning impairment was predicted by age and familiarity for neurodevelopmental disorders and, indirectly, via the mediation of the Working Memory Index, by the Rule-Breaking Behavior scale. This result enriches the previous literature as it suggests that behind the acknowledged relation between low working memory skills and learning impairments in SLD, there could be the role of behavioral regulation. Those subjects with greater difficulties in following rules and controlling behavior may pay less attention to maintaining and updating verbal information in working memory with cascade effects on learning competence [66].
+
+Considering the results as a whole, on the one hand, our study confirms the previous literature concerning the greater presence of internalizing problems in subjects with SLD, especially when they are older, and the higher manifestation of externalizing problems in males and in children with low working memory profiles. On the other hand, the present study increases the knowledge about the relationship between externalizing problems and learning impairment, reporting that this relation is not direct but mediated by cross-cognitive processes, such as working memory. Thus, a potential role of working memory as a mediator of the relationship between behavioral regulation and learning impairment may be supposed.
+
+The present study has some limits, such as the inclusion of a widespread age range and the need to collect longitudinal data that could help in describing the developmental trajectories of the emotional-behavioral problems in SLD and their relationship with learning disorders. Another limitation is that the chronological age of our sample overlapped with the age of first diagnosis, thus limiting the interpretation of the age effects. Despite the good psychometrical properties of the CBCL, it is a parental reports diagnostic screening tool, thus future and longitudinal studies are needed to implement other clinical or educational data on the emotional-behavioral characteristic of children and adolescents with SLD.
+
+These results may have implications for clinical practice: Beyond the importance of combining learning assessment with emotional and neuropsychological profile, it is of the utmost importance to provide psychological and emotional support to subjects with SLD, because of the high presence of internalizing problems and the cascade effects of externalizing problems on cognitive and learning profile. Moreover, our results support the growing literature on the implementation of training on working memory [67,68] and on emotional-behavioral problems [69,70,71] in SLD, especially in this clinical condition when behavioral and regulation problems are revealed.
+
+5. Conclusions
+
+An emotional-learning-cognitive model is proposed in order to relate the different factors that may characterize the inter-individual variability of individuals with SLD.
+
+Although further studies with larger samples and more extensive neuropsychological investigations may be conducted to confirm these findings, our study is the first attempt to understand how the cognitive profile mediates emotional-behavioral phenotype in SLD subjects.
+
+Acknowledgments
+
+We would like to thank the children and parents who participated in this study. We also thank Alessia Martucci for english revision.
+
+Supplementary Materials
+
+The following supporting information can be downloaded at: https://www.mdpi.com/article/10.3390/jcm12051882/s1, Table S1: t statistics for Bonferroni post-hoc corrections for multiple comparisons, on the Wechsler indices; Table S2: t statistics for Bonferroni post-hoc corrections for multiple comparisons on the CBCL DSM-oriented sub-scales; Table S3: t statistics for Bonferroni post-hoc corrections for multiple comparisons on the CBCL syndrome scales.
+
+Click here for additional data file.
+
+Author Contributions
+
+Conceptualization, P.C., M.C.D.L., A.M.C. and A.M.; Methodology, P.C., M.C.D.L., C.P., O.P., A.M.C. and A.M.; Formal Analysis, M.C.D.L., F.G. and C.P.; Investigation, P.C., M.C.D.L., F.G., M.B.D.L. and M.B.(Mariaelisa Bartoli); Data Curation, O.P., M.B.D.L., P.C., M.B.(Mariaelisa Bartoli) and C.P.; Writing—Original Draft Preparation, P.C., M.B. (Matteo Baroncini), M.C.D.L., C.C. and C.P.; Writing—Review & Editing, A.M., A.M.C., C.C., F.G., M.B.(Matteo Baroncini) and M.B.D.L.; Supervision, C.P., C.C., A.M. and A.M.C. All authors have read and agreed to the published version of the manuscript.
+
+Institutional Review Board Statement
+
+The study was conducted according to the guidelines of the Declaration of Helsinki and approved by the Paediatric Ethics Committee of the Tuscany Region (248/2020).
+
+Informed Consent Statement
+
+Written informed consent has been obtained from the all parents of children involved to publish this paper.
+
+Data Availability Statement
+
+The datasets generated for this study are available on request to the corresponding author.
+
+Conflicts of Interest
+
+The authors declare no conflict of interest.
+
+Figure 1 (a) Mean and Standard Deviation of T scores in each CBCL syndrome composite scale, * represent the statistical significant differences (p < 0.05) between CBCL syndrome scales; (b) scatterplot distribution of Internalizing (black) and Externalizing (gray) Problems scales.
+
+Figure 2 % of scores in the borderline (64–69) or clinical (>70) range at the syndrome subscales.
+
+Figure 3 % of scores in the borderline (64–69) or clinical (>70) range at the DSM-5 oriented sub-scales.
+
+Figure 4 A mediation model analysis on the relationship between background, cognitive, and CBCL variables on median learning impairment (Indirect effect: BootLLCI = 0.0057; BootULCI = 0.03306).
+
+jcm-12-01882-t001_Table 1 Table 1 Descriptive statistics of the score range (1, Normal, 2, Borderline, 3 Deficient) obtained at the academic tests.
+
+	Text Decoding Accuracy	Text Decoding Speed	Text Comprehension Accuracy	Text Dictation Accuracy	Sentences Dictation Accuracy	Math
+Quotient	
+Median	2	3	2	3	2	2	
+Interquartile Differences	2	1	1	1	1	1	
+
+jcm-12-01882-t002_Table 2 Table 2 Cognitive profile at the Wechsler scales.
+
+	N	Minimum	Maximum	M	SD	
+VCI	117	70	124	98.90	11,724	
+PRI	118	65	141	101.58	13,145	
+WMI	115	55	115	84.83	13,543	
+PSI	115	53	138	90.99	13,646	
+Legend: WISC-IV descriptive statistics of the sample of subjects. VCI: Verbal Comprehension Index; PRI: Perceptual Reasoning Index; WMI: Working Memory Index; PSI: Processing Speed Index.
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+==== Refs
+References
+
+1. American Psychiatric Association Diagnostic and Statistical Manual of Mental Disorders 5th ed. American Psychiatric Publishing Washington, DC, USA 2013 DSM-5 TM
+2. Mayes S.D. Calhoun S.L. Crowell E.W. Learning disabilities and ADHD: Overlapping spectrum disorders J. Learn. Disabil. 2000 33 417 424 10.1177/002221940003300502 15495544
+3. Willcutt E.G. Pennington B.F. Psychiatric Comorbidity in Children and Adolescents with Reading Disability J Child Psychol. Psychiatry 2000 41 1039 1048 10.1111/1469-7610.00691 11099120
+4. Maughan B. Rowe R. Loeber R. Stouthamer-Loeber M. Reading Problems and Depressed Mood. J. Abnorm Child Psychol. 2003 31 219 229
+5. Margari L. Buttiglione M. Craig F. Cristella A. de Giambattista C. Matera E. Operto F. Simone M. Neuropsychopathological comorbidities in learning disorders BMC Neurol. 2013 13 198 10.1186/1471-2377-13-198 24330722
+6. Mammarella I.C. Ghisi M. Bomba M. Bottesi G. Caviola S. Broggi F. Nacinovich R. Anxiety and depression in children with nonverbal learning disabilities, reading disabilities, or typical development J. Learn. Disabil. 2016 49 130 139 10.1177/0022219414529336 24733818
+7. Visser L. Kalmar J. Linkersdörfer J. Görgen R. Rothe J. Hasselhorn M. Schulte-Körne G. Comorbidities Between Specific Learning Disorders and Psychopathology in Elementary School Children in Germany Front. Psychiatry 2020 11 292 10.3389/fpsyt.2020.00292 32411022
+8. Williams D. Lind S. Comorbidity and diagnosis of developmental disorders Current Issues in Developmental Psychology Marshall C. Psychology Press Editor London, UK 2013 19 45
+9. Gooch D. Hulme C. Nash H.M. Snowling M.J. Comorbidities in preschool children at family risk of dyslexia J. Child Psychol. Psychiatry 2014 55 237 246 10.1111/jcpp.12139 24117483
+10. Carroll J.M. Maughan B. Goodman R. Meltzer H. Literacy difficulties and psychiatric disorders: Evidence for comorbidity J. Child Psychol. Psychiatry 2005 46 524 532 10.1111/j.1469-7610.2004.00366.x 15845132
+11. McGee R. Williams S. Share D.L. Anderson J. Silva P.A. The relationship between Specific Reading Retardation, General Reading Backwardness and Behavioural Problems in a large sample of Dunedin Boys: A longitudinal study from five to eleven years J. Child Psychol. Psychiatry 1986 27 597 610 10.1111/j.1469-7610.1986.tb00185.x 3771677
+12. Prior M. Smart D. Sanson A. Oberklaid F. Relationships between learning difficulties and psychological problems in preadolescent children from a longitudinal sample J. Am. Acad. Child Adolesc. Psychiatry 1999 38 429 436 10.1097/00004583-199904000-00016 10199115
+13. Achenbach T.M. Edelbrock C.S. The classification of child psychopathology: A review and analysis of empirical efforts Psychol. Bull. 1978 85 1275 1301 10.1037/0033-2909.85.6.1275 366649
+14. Marianelli C.V. Romano G. Cristalli I. Franzese A. Di Filippo G. Autostima, stile attributivo e disturbi internalizzanti in bambini dislessici Dislessia 2016 13 297 310
+15. Altay M.A. Görker I. Assessment of psychiatric comorbidity and WISC-R profiles in cases diagnosed with specific learning disorder according to DSM-5 criteria Arch. Neuropsychiatry 2018 55 127
+16. Huc-Chabrolle M. Barthez M.A. Tripi G. Barthélémy C. Bonnet-Brilhault F. Psychocognitive and psychiatric disorders associated with developmental dyslexia: A clinical and scientific issue Encephale 2010 36 172 179 10.1016/j.encep.2009.02.005 20434636
+17. Sahu A. Patil V. Sagar R. Bhargava R. Psychiatric comorbidities in children with Specific Learning Disorder-Mixed Type: A cross-sectional study J. Neurosci. Rural Pract. 2019 10 617 622 10.1055/s-0039-1697879 31844375
+18. Horbach J. Mayer A. Scharke W. Heim S. Günther T. Development of Behavior Problems in Children with and without Specific Learning Disorders in Reading and Spelling from Kindergarten to Fifth Grade Sci. Stud. Read 2020 24 57 71 10.1080/10888438.2019.1641504
+19. DuPaul G.J. Gormley M.J. Laracy S.D. Comorbidity of LD and ADHD: Implications of DSM-5 for Assessment and Treatment J. Learn. Disabil. 2013 46 43 51 10.1177/0022219412464351 23144063
+20. de la Côte-Sainte-Catherine C. ADHD and comorbid disorders in childhood psychiatric problems, medical problems, learning disorders and developmental coordination J. Clin. Psychiatry 2015 1 1 9
+21. Pennington B.F. From single to multiple deficit models of developmental disorders Cognition 2006 101 385 413 10.1016/j.cognition.2006.04.008 16844106
+22. Giovagnoli S. Mandolesi L. Magri S. Gualtieri L. Fabbri D. Tossani E. Benassi M. Internalizing Symptoms in Developmental Dyslexia: A Comparison Between Primary and Secondary School Front. Psychol. 2020 11 461 10.3389/fpsyg.2020.00461 32265786
+23. Palombo J. Learning Disorders & Disorders of the Self in Children & Adolescents WW Norton & Company New York, NY, USA 2001
+24. Pizzoli C. Lami L. Calmieri A. Solimando M.C. Dislessia e fattori psicosociali: Percorso accademico e benessere psicosociale in due campioni di dislessici giovani adulti Psicol. Clin. Dello Sviluppo 2011 4 95 122
+25. McNulty M.A. Dyslexia and the life course J. Learn. Disabil. 2003 36 363 381 10.1177/00222194030360040701 15490908
+26. Gibson S. Beyond a “culture of silence”: Inclusive education and the liberation of “voice” Disabil. Soc. 2006 21 315 329 10.1080/09687590600679956
+27. Mugnaini D. Lassi S. La Malfa G. Albertini G. Internalizing correlates of dyslexia World J. Pediatr. 2009 5 255 264 10.1007/s12519-009-0049-7 19911139
+28. Nachshon O. Horowitz-Kraus T. Cognitive and emotional challenges in children with reading difficulties Acta Paediatr. 2019 108 1110 1114 10.1111/apa.14672 30506734
+29. Heiervang E. Lund A. Stevenson J. Hugdahl K. Behaviour problems in children with dyslexia Nord. J. Psychiatry 2001 55 251 256 10.1080/080394801681019101 11839115
+30. Brizzolara D. Gasperini F. Pfanner L. Cristofani P. Casalini C. Chilosi A. Long-term reading and spelling outcome in Italian adolescents with a history of specific language impairment Cortex 2011 47 955 973 10.1016/j.cortex.2011.02.009 21440251
+31. Casalini C. Brizzolara D. Chilosi A.M. Gasperini F. Pecini C. Late effects of early language delay on complex language and literacy abilities: A clinical approach to dyslexia in subjects with a previous language impairment A Linguistic Approach to the Study of Dyslexia Cappelli G. Noccetti S. Multilingual Matters Bristol, UK 2022 66 86
+32. Tomblin J.B. Zhang X. Buckwalter P. Catts H. The Association of Reading Disability, Behavioral Disorders, and Language Impairment among Second-grade Children J. Child Psychol. Psychiatry 2000 41 473 482 10.1111/1469-7610.00632 10836677
+33. Durkin K. Conti-Ramsden G. Language, social behavior, and the quality of friendships in adolescents with and without a history of specific language impairment Child Dev. 2007 78 1441 1457 10.1111/j.1467-8624.2007.01076.x 17883441
+34. Conti-Ramsden G. Durkin K. Toseeb U. Botting N. Pickles A. Education and employment outcomes of young adults with a history of developmental language disorder Int. J. Lang Commun. Disord. 2018 53 237 255 10.1111/1460-6984.12338 29139196
+35. van den Bedem N.P. Dockrell J.E. van Alphen P.M. de Rooij M. Samson A.C. Harjunen E.L. Rieffe C. Depressive symptoms and emotion regulation strategies in children with and without developmental language disorder: A longitudinal study Int. J. Lang Commun. Disord. 2018 53 1110 1123 10.1111/1460-6984.12423 30141224
+36. Sundheim S.T.P.V. Voeller K.K.S. Psychiatric implications of language disorders and learning disabilities: Risks and management J. Child Neurol. 2004 19 814 826 10.1177/08830738040190101001 15559896
+37. World Health Organization International Statistical Classification of Diseases and Health Related Problems ICD-10: Tenth Revision 5th ed. World Health Organization Geneva, Switzerland 2016 Available online: https://apps.who.int/iris/handle/10665/246208 (accessed on 7 December 2022)
+38. Panel di Aggiornamento e Revisione della Consensus Conference DSA—P.A.R.C.C Raccomandazioni Cliniche sui DSA Documento D’intesa in Risposta a Quesiti Sui Disturbi Evolutivi Specifici Dell’apprendimento 2011 Available online: www.lineeguidadsa.it (accessed on 7 December 2022)
+39. Wechsler D. Wechsler Intelligence Scale for Children–Fourth Edition (WISC-IV) Technical and Interpretive Manual The Psychological Corporation San Antonio, TX, USA 2003
+40. Wechsler D. Wechsler Adult Intelligence Scale—Fourth Edition (WAIS-IV) Technical and Interpretative Manual Pearson San Antonio, TX, USA 2008
+41. Orsini A. Pezzuti L. Picone L. WISC-IV: Contributo Alla Taratura Italiana Giunti OS Firenze, Italy 2012
+42. Orsini A. Pezzuti L. WAIS-IV. Contributo Alla Taratura Italiana Giunti OS Firenze, Italy 2013
+43. Lorusso M. Vernice M. Dieterich M. Brizzolara D. Mariani E. De Masi S. D’Angelo F. Lacorte E. Mele A. The process and criteria for diagnosing specific learning disorders: Indications from the Consensus Conference promoted by the Italian National Institute of Health Ann. Dell’Istituto Super. Di Sanità 2014 50 77 89
+44. Achenbach T.M. Manual for the Child Behavior Checklist/4–18 and 1991 Profile University of Vermont, Department of Psychiatry Burlington, VT, USA 2001
+45. Achenbach T.M. Rescorla L. Manual for the ASEBA School-Age Forms & Profiles: An Integrated SYSTEM of Multi-Informant Assessment ASEBA Burlington, VT, USA 2001
+46. Chilosi A.M. Brizzolara D. Lami L. Pizzoli C. Gasperini F. Pecini C. Cipriani P. Zoccolotti P. Reading and spelling disabilities in children with and without a history of early language delay: A neuropsychological and linguistic study Child Neuropsychol. 2009 15 582 604 10.1080/09297040902927614 19492202
+47. Frigerio A. Cattaneo C. Cataldo M. Schiatti A. Molteni M. Battaglia M. Behavioral and Emotional Problems Among Italian Children and Adolescents Aged 4 to 18 Years as Reported by Parents and Teachers Eur. J. Psychol. Assess 2004 20 124 133 10.1027/1015-5759.20.2.124
+48. Frigerio A. Rucci P. Goodman R. Ammaniti M. Carlet O. Cavolina P. de Girolamo G. Lenti C. Lucarelli L. Mani E. Prevalence and correlates of mental disorders among adolescents in Italy: The PrISMA study Eur. Child Adolesc. Psychiatry 2009 18 217 226 10.1007/s00787-008-0720-x 19165539
+49. Gritti A. Bravaccio C. Signoriello S. Salerno F. Pisano S. Catone G. Gallo C. Pascotto A. Epidemiological study on behavioural and emotional problems in developmental age: Prevalence in a sample of Italian children, based on parent and teacher reports Ital. J. Pediatr. 2014 40 19 10.1186/1824-7288-40-19 24533835
+50. Althoff R.R. Ayer L.A. Rettew D.C. Hudziak J.J. Assessment of Dysregulated Children Using the Child Behavior Checklist: A Receiver Operating Characteristic Curve Analysis Psychol. Assess 2010 22 609 617 10.1037/a0019699 20822273
+51. Aitken M. Battaglia M. Marino C. Mahendran N. Andrade B.F. Clinical utility of the CBCL Dysregulation Profile in children with disruptive behavior J. Affect. Disord. 2019 253 87 95 10.1016/j.jad.2019.04.034 31029857
+52. Cornoldi C. Colpo G. Nuove Prove di Lettura MT Organizzazioni Speciali Firenze, Italy 1995
+53. Cornoldi C. Colpo G. Gruppo M.T. Nuove Prove di Lettura MT Giunti OS Firenze, Italy 1998
+54. Cornoldi C. Pra Baldi A. Friso G. Giacomin A. Giofrè D. Zaccaria S. Prove di Lettura MT Avanzate-2. Prove MT Avanzate di Lettura e Matematica 2 per il Biennio Della Scuola Secondaria di Secondo Grado Giunti OS Firenze, Italy 2010
+55. Sartori G. Job R. DDE-2: Batteria per la Valutazione Della Dislessia e Della Disortografia Evolutiva-2 Giunti OS Firenze, Italy 2007
+56. Tressoldi P.E. Cornoldi C. Re A.M. BVSCO-2. Batteria per la Valutazione Della Scrittura e Della Competenza Ortografica-2 Giunti Edu Firenze, Italy 2013
+57. Biancardi A. Nicoletti C. Bachmann C. BDE 2-Batteria Discalculia Evolutiva: Test per la Diagnosi dei Disturbi Dell’elaborazione numerica e del Calcolo in età Evolutiva–8-13 Anni Edizioni Centro Studi Erickson Trento, Italy 2016
+58. Muthén B. Kaplan D. A comparison of some methodologies for the factor analysis of non-normal Likert variables Br. J. Math. Stat. Psychol. 1985 38 171 189 10.1111/j.2044-8317.1985.tb00832.x
+59. Blanca Mena M.J. Alrcòn Postigo M. Arnau Gras J. Bono Cabré R. Bendayan R. Non-normal data: Is ANOVA still a valid option? Psicothema 2017 29 552 557 29048317
+60. Bäcker A. Neuhäuser G. Internalizing and externalizing syndrome in reading and writing disorders Prax Kinderpsychol Kinderpsychiatr. 2003 52 329 337 12838711
+61. Istituto Superiore di Sanità—ISS Linea Guida Sulla Gestione dei Disturbi Specifici di Apprendimento (DSA) Aggiornamento e Integrazioni 2021 Available online: Snlg.iss.it/wp-content/uploads/2022/03/LG-389-AIP_DSA.pdf (accessed on 7 December 2022)
+62. Giofrè D. Borella E. Mammarella I.C. The relationship between intelligence, working memory, academic self-esteem, and academic achievement Cogn. Psychol. 2017 29 731 747 10.1080/20445911.2017.1310110
+63. Toffalini E. Marsura M. Garcia R.B. Cornoldi C. A cross-modal working memory binding span deficit in reading disability J. Learn. Disabil. 2019 52 99 108 10.1177/0022219418786691 29985098
+64. Avenevoli S. Swendsen J. He J.P. Burstein M. Merikangas K. Major depression in the National Comorbidity Survey-Adolescent Supplement: Prevalences, Correlates, and Treatment J. Am. Acad. Child Adolesc. Psychiatry 2015 54 37 44.e2 10.1016/j.jaac.2014.10.010 25524788
+65. D’Acunto M.G. Masi G. Disturbi dell’umore Disturbi e Traiettorie Atipiche del Neurosviluppo. Diagnosi e Intervento Pecini C. Brizzolara D. McGrawHill Milano, Italy 2020 377 395
+66. Rhodes S.M. Park J. Seth S. Coghill D.R. A comprehensive investigation of memory impairment in attention deficit hyperactivity disorder and oppositional defiant disorder J Child Psychol. Psychiatry 2012 53 128 137 10.1111/j.1469-7610.2011.02436.x 21770938
+67. Peijnenborgh J.C. Hurks P.M. Aldenkamp A.P. Vles J.S. Hendriksen J.G. Efficacy of working memory training in children and adolescents with learning disabilities: A review study and meta-analysis Neuropsychol. Rehabil. 2016 26 645 672 10.1080/09602011.2015.1026356 25886202
+68. Capodieci A. Romano M. Castro E. Di Lieto M.C. Bonetti S. Spoglianti S. Pecini C. Executive Functions and Rapid Automatized Naming: A New Tele-Rehabilitation Approach in Children with Language and Learning Disorders Children 2022 9 822 10.3390/children9060822 35740759
+69. Habibzadeh A. Pourabdol S. Saravani S. The effect of emotion regulation training in decreasing emotion failures and self-injurious behaviors among students suffering from specific learning disorder (SLD) Med. J. Islam. Repub. Iran 2015 29 279 26793670
+70. Terras M.M. Thompson L.C. Minnis H. Dyslexia and psycho-social functioning: An exploratory study of the role of self-esteem and understanding Dyslexia 2009 15 304 327 10.1002/dys.386 19384920
+71. Wilmot A. Hasking P. Leitão S. Hill E. Boyes M. Understanding Mental Health in Developmental Dyslexia: A Scoping Review Int. J. Environ. Res. Public Health 2023 20 1653 10.3390/ijerph20021653 36674408
+

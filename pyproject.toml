@@ -8,7 +8,7 @@ packages = [{include = "clinfo"}]
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.11.7"
+python = ">=3.11.7,<3.13"
 aiohttp = "3.9.5"
 datasets = "^2.20.0"
 pathlib = "^1.0.1"
@@ -30,6 +30,8 @@ fastapi = "^0.112.0"
 python-dotenv = "^1.0.1"
 llama_index="0.10.64"
 poetry-plugin-dotenv = "^2.2.3"
+semantic-chunkers = "^0.0.9"
+aioboto3 = "^13.1.1"
 [tool.poetry.plugins.dotenv]
 location = ".env"
 

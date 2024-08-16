@@ -1,6 +1,7 @@
 import os
 
 # Make Sure you followed at least step 1-2 before running this cell.
+from src.clinfoai.aws_client import S3Client
 from src.clinfoai.pubmed_engine import PubMedNeuralRetriever
 
 PROMPS_PATH = os.path.join(
@@ -52,3 +53,19 @@ def highlight_summary(summary: str) -> str:
     summary = summary.replace("Citation:", "**Citation:**")
 
     return summary
+
+
+def fetch_full_article_content(article_ids: list[str]):
+    s3_client = S3Client()
+    s3_client.download_files(article_ids)
+
+
+async def afetch_full_article_content(article_ids: list[str]):
+    s3_client = S3Client()
+    await s3_client.async_download_files(article_ids)
+
+    # asyncio.run(main())
+
+# {
+#     "file_ids": ["PMC8740363.txt", "PMC9844886.txt"]
+# }

@@ -74,7 +74,7 @@ class Reranker:
         return scores[0] > RELEVANT_THRESHOLD
 
 
-reranker = Reranker()
+# reranker = Reranker()
 
 
 def subtract_n_years(date_str: str, n: int = 20) -> str:
@@ -552,8 +552,8 @@ class PubMedNeuralRetriever:
         try:
             abstract = article["MedlineCitation"]["Article"]["Abstract"]["AbstractText"]
             abstract = self.reconstruct_abstract(abstract)
-            # article_is_relevant = self.is_article_relevant(abstract, question)
-            article_is_relevant = self.is_article_relevant_reranker(abstract, question)
+            article_is_relevant = self.is_article_relevant(abstract, question)
+            # article_is_relevant = self.is_article_relevant_reranker(abstract, question)
             citation = self.construct_citation(article)
             if self.verbose:
                 print(citation)
@@ -565,6 +565,18 @@ class PubMedNeuralRetriever:
                 f"https://pubmed.ncbi.nlm.nih.gov/"
                 f"{article['MedlineCitation']['PMID']}/"
             )
+
+            # ArticleIdList': [StringElement('32030001', attributes={'IdType': 'pubmed'}), StringElement('PMC6982615', attributes={'IdType': 'pmc'}), StringElement('10.1007/s13224-019-01263-x', attributes={'IdType': 'doi'}), StringElement('1263', attributes={'IdType': 'pii'})]}}]
+
+            pmc_id = next(
+                (
+                    element
+                    for element in article["PubmedData"]["ArticleIdList"]
+                    if element.attributes.get("IdType") == "pmc"
+                ),
+                None,
+            )
+
             article_json = {
                 "title": title,
                 "url": url,
@@ -572,6 +584,7 @@ class PubMedNeuralRetriever:
                 "citation": citation,
                 "is_relevant": article_is_relevant,
                 "PMID": article["MedlineCitation"]["PMID"],
+                "PMCID": pmc_id,
             }
 
             if article_is_relevant:
@@ -629,13 +642,9 @@ class PubMedNeuralRetriever:
         citations: list[dict] = []
         for i, summary in enumerate(article_summaries):
             citation = re.sub(r"\n", "", summary["citation"])
-            
-            citations.append({
-              "index": i + 1,
-              "url": summary['url'],
-              "text": citation
-            })
-            
+
+            citations.append({"index": i + 1, "url": summary["url"], "text": citation})
+
             article_summaries_with_citations.append(
                 f"[{i+1}] Source: {citation}\n\n\n {summary['summary']}"
             )

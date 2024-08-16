@@ -19,3 +19,4 @@ src/clinfoai/utils/__pycache__/
 .env
 
 PMData/
+.DS_Store

@@ -1,0 +1,292 @@
+
+==== Front
+J Clin Med
+J Clin Med
+jcm
+Journal of Clinical Medicine
+2077-0383
+MDPI
+
+10.3390/jcm12051716
+jcm-12-01716
+Article
+Venous Thrombus Embolism in Polytrauma: Special Attention to Patients with Traumatic Brain Injury
+Chen Deng 1
+https://orcid.org/0000-0001-8179-5236
+Luo Jialiu 1
+Zhang Cong 1
+Tang Liangsheng 1
+https://orcid.org/0000-0002-2337-5222
+Deng Hai 1
+Chang Teding 1
+Xu Huaqiang 2
+He Miaobo 2
+Wan Dongli 2
+Zhang Feiyu 3
+Wu Mengfan 3
+Qian Min 4
+Zhou Wen 4
+Yin Gang 3*
+Wang Wenguo 2*
+Dong Liming 1*
+Tang Zhaohui 1*
+Van der Naalt Joukje Academic Editor
+Jacobs Bram Academic Editor
+1 Department of Trauma Surgery, Tongji Trauma Center, Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan 430030, China
+2 Intensive Care Unit, Trauma Center, Suizhou Central Hospital, Hubei University of Medicine, Suizhou 441300, China
+3 Department of Trauma Surgery, Trauma Center, Tianmen First People’s Hospital, Hubei University of Science and Technology, Tianmen 417300, China
+4 Department of Emergency Medicine, The People’s Hospital of China Three Gorges University, China Three Gorges University, Yichang 443000, China
+* Correspondence: gangy78@hbust.edu.cn (G.Y.); wgwang@hbmu.edu.cn (W.W.); lmdong@tjh.tjmu.edu.cn (L.D.); tangzh@tjh.tjmu.edu.cn (Z.T.)
+21 2 2023
+3 2023
+12 5 171629 12 2022
+06 2 2023
+19 2 2023
+© 2023 by the authors.
+2023
+https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+Venous thrombus embolism (VTE) is common after polytrauma, both of which are considered significant contributors to poor outcomes and mortality. Traumatic brain injury (TBI) is recognized as an independent risk factor for VTE and one of the most common components of polytraumatic injuries. Few studies have assessed the impact of TBI on the development of VTE in polytrauma patients. This study sought to determine whether TBI further increases the risk for VTE in polytrauma patients. A retrospective, multi-center trial was performed from May 2020 to December 2021. The occurrence of venous thrombosis and pulmonary embolism from injury to 28 days after injury was observed. Of 847 enrolled patients, 220 (26%) developed DVT. The incidence of DVT was 31.9% (122/383) in patients with polytrauma with TBI (PT + TBI group), 22.0% (54/246) in patients with polytrauma without TBI (PT group), and 20.2% (44/218) in patients with isolated TBI (TBI group). Despite similar Glasgow Coma Scale scores, the incidence of DVT in the PT + TBI group was significantly higher than in the TBI group (31.9% vs. 20.2%, p < 0.01). Similarly, despite no difference in Injury Severity Scores between the PT + TBI and PT groups, the DVT rate was significantly higher in the PT + TBI group than in the PT group (31.9% vs. 22.0%, p < 0.01). Delayed anticoagulant therapy, delayed mechanical prophylaxis, older age, and higher D-dimer levels were independent predictive risk factors for DVT occurrence in the PT + TBI group. The incidence of PE within the whole population was 6.9% (59/847). Most patients with PE were in the PT + TBI group (64.4%, 38/59), and the PE rate was significantly higher in the PT + TBI group compared to the PT (p < 0.01) or TBI (p < 0.05) group. In conclusion, this study characterizes polytrauma patients at high risk for VTE occurrence and emphasizes that TBI markedly increases the incidence of DVT and PE in polytrauma patients. Delayed anticoagulant therapy and delayed mechanical prophylaxis were identified as the major risk factors for a higher incidence of VTE in polytrauma patients with TBI.
+
+polytrauma
+traumatic brain injury
+venous thrombus embolism
+deep venous thrombosis
+pulmonary embolism
+National Natural Science Foundation of China81873870 This study was supported, in part, by grant 81873870 (Z.T.) from the National Natural Science Foundation of China.
+==== Body
+pmc1. Introduction
+
+Polytrauma describes patients with two injuries that are greater than or equal to a score of 3 on the AIS and one or more additional diagnoses (pathologic conditions) [1,2]. Polytrauma is characterized by poor outcomes and high mortality due to fatal damage and intractable complications, especially trauma-induced coagulopathy (TIC). Studies have highlighted TIC as a common direct cause of early post-injury mortality (30–50%) [3]; 89% of deaths were bleeding-related. A venous thromboembolism event (VTE) is a pathological outcome related to a coagulation disorder originating from TIC. A VTE consists, principally, of deep vein thrombosis (DVT) and pulmonary embolism (PE). Previous studies have found the incidence of lower extremity DVT to be as high as 20% in polytrauma patients [4], and DVT is also the primary cause of death in patients who survive their initial traumatic injuries [5]. The occurrence of fatal PE is reportedly uncommon after major trauma, but it accounts for about 11.9% of late death in polytrauma patients [6,7].
+
+Accumulating evidence indicates that more than 50% of polytrauma patients have an associated traumatic brain injury (TBI), which is an important factor influencing long-term survival [7,8]. Of note, TBI was a recognized independent risk factor for the development of VTE [9]. According to our clinical practice experience, polytrauma patients with TBI are at a higher risk of developing VTE than polytrauma patients without TBI because early treatment is more difficult due to complicated and intractable conditions.
+
+Previous studies have focused primarily on VTE (DVT or PE) occurrence in either polytrauma or isolated TBI. To our knowledge, there is limited clinical data on VTE occurrence in polytrauma patients with TBI. To address this issue, we performed a clinical study to assess the occurrence of VTE over time and identify risk factors for VTE in polytrauma patients with TBI. The aim of the present study was to test the hypothesis that TBI increases the risk of VTE in polytrauma patients because of the dilemma of early therapeutic interventions.
+
+2. Materials and Methods
+
+2.1. Patient Selection and Diagnostic Modalities
+
+This was an institutional review board-approved, retrospective, multi-center, observational trial with informed consent. The occurrence of venous thrombosis and pulmonary embolism from injury to 28 days after injury was observed. All patients involved in this study were from the traumatic intensive care unit (TICU) or intensive care unit (ICU) of the Advanced Trauma Center (Level I, verified by the China Trauma Rescue & Treatment Association (CTRTA)) at the Tongji Hospital (Wuhan), Suizhou Central Hospital (Suizhou), and Tianmen People’s Hospital (Tianmen) from May 2020 to October 2021. Inclusion criteria for this retrospective analysis were as follows: (1) age over 18 years; (2) isolated traumatic brain injury or injuries with an AIS score ≥ 3 in ≥ 2 body regions (2AIS ≥ 3) [1]. Patients younger than 18 years, incarcerated, pregnant, and/or mentally ill and patients with a history of VTE or who were treated with delayed presentation due to transfer were excluded from our study. There were 862 patients enrolled in our study, and 15 patients were excluded based on exclusion criteria; eventually, a total of 847 consecutive patients met the eligibility requirements. All enrolled patients were classified into either the polytrauma with TBI (PT + TBI), polytrauma without TBI (PT), or isolated TBI (TBI) group according to their diagnosis. VTE was diagnosed based on the presence of DVT or PE. DVT was defined as an abnormality seen on venous Doppler ultrasound (VDU), such as the presence of dilated, noncompressible veins or intraluminal shadows consistent with thrombosis [10]. PE was defined as a filling defect detected on computed tomography pulmonary angiography (CTPA), which was ordered only on the basis of clinical suspicions, such as the onset of abrupt and unexplained hypoxia, hypotension, tachycardia, or any combination of these [11]. The Pulmonary Embolism Severity Index (PESI) was applied to predict the risk-stratifications of PE. CTPA was recommended for patients with a revised Geneva score ≥ 3 coupled with age-adjusted D-dimer cut-offs, according to guidelines [10]. TBI was defined by the presence of subdural hemorrhage, epidural hemorrhage, focal contusion, or diffuse axonal injury on computed tomography (CT), according to recommended guidelines [12]. Polytrauma was defined as injuries with an AIS score ≥ 3 in ≥ 2 body regions (2AIS ≥ 3), according to the new ‘Berlin definition’ [1]. All enrolled subjects received standardized treatment and management per established TBI and polytrauma guidelines [12,13]. All enrolled subjects received appropriate venous thromboprophilaxis treatment and management based on the latest guidelines [10]. In detail, on the premise of avoiding further injury and progressive cerebral hemorrhage, patients received venous thromboprophilaxis as early as possible. Venous thromboprophilaxis includes mechanical prophylaxis (continuous passive motion, once a day) and chemical prophylaxis (heparinum natricum minor molecularis or nadroparin calcium, once a day).
+
+The present study was approved by the ethics committee at Tongji Hospital, Suizhou Central Hospital, and Tianmen People’s Hospital. Patient consent for data collection was obtained from each patient or the patient’s legally authorized representative.
+
+2.2. Data Collected
+
+The patient characteristics data collected were the following: sex; age; mechanisms of injury; pre-hospital comorbidities, including smoking status, hyperlipemia, hypertension, and diabetes mellitus; laboratory values, including activated partial thromboplastin time, D-dimer, and platelets; and post-hospitalization interventions, such as the occurrence of DVT/PE, ICU length of stay (LOS), transfusions, operations, and duration of ventilator use. The patient demographics and characteristics (age, gender, physical condition, GCS, ISS, location(s) of injury, etc.) were assessed upon admission. Laboratory values were assessed within 24 h after injury and post-hospitalization interventions, complications, and mortality were assessed from the time of injury to 28 days after injury. The injury profile included the ISS and AIS for body regions. If consent was obtained, serial VDUs and blood samples for coagulation analysis were obtained. Repeat VDU and blood samples were obtained weekly for the patients in our study. Furthermore, a VDU of both lower extremities was performed from the ankle to the inguinal ligament to evaluate the deep venous system and determine the presence of a DVT.
+
+2.3. Study End Points
+
+The primary outcome of this study was the incidence of DVT or PE after polytrauma. Secondary outcomes were the risk factors for DVT in the PT + TBI population and the clinical features.
+
+2.4. Statistical Analysis
+
+Data were analyzed with SPSS 22.0 (SPSS Inc., Chicago, IL, USA). Prior to analysis, all data were examined for normality and homogeneity of variance. Descriptive statistics were performed for all variables. Categorical variables were expressed as percentages, and continuous variables were expressed as mean and standard deviation or median and range, as appropriate. Student’s t-test and the Mann–Whitney U test were used to compare continuous variables, and χ2 was used to compare categorical variables. Differences between groups on continuous data were analyzed using the one-way analysis of variance (ANOVA) followed by the Bonferroni test, or Kruskal–Wallis test for non-parametric data. Group differences in categorical variables were compared using Pearson’s χ2 or Fisher’s exact test for non-parametric data. A multivariable logistic regression analysis was performed to identify risk factors for DVT in the PT + TBI group. All patients in the PT + TBI group who met the diagnostic criteria for DVT were allocated to the DVT+ group. The factors differentiating the two groups were first identified through univariate analysis. Age and covariates with statistical significance (p < 0.05) were included in the multivariable logistic regression model. The overall fit of the final model was evaluated using the Hosmer–Lemeshow goodness-of-fit index and the area under the receiver operating characteristic (ROC) curve. The final model expressed odds ratios and 95% confidence intervals. For all tests, p < 0.05 was considered statistically significant.
+
+3. Results
+
+3.1. Patient Demographics and Characteristics
+
+The study cohort consisted of 847 trauma patients who met the inclusion criteria. Among these, 383 patients were diagnosed with polytrauma and TBI (PT + TBI group), 246 with polytrauma without TBI (PT group), and 218 with isolated TBI (TBI group). The demographics and characteristics of the study population are summarized in Table 1. No significant differences were observed between the three groups with respect to basic demographics, including age, sex, and comorbid medical conditions. Particularly, the mean Glasgow Coma Scale (GCS) scores upon presentation were comparable for the PT + TBI and TBI cohorts, and the ISS was similar among the PT + TBI and PT groups (Table 1).
+
+3.2. Incidence of DVT
+
+The overall incidence of detectable DVT among all enrolled trauma patients was 26% (220/847). The DVT rate was 31.9% (122/383) in the PT + TBI group, 22.0% (54/246) in the PT group, and 20.2% (44/218) in the TBI group. The difference in DVT rates between the PT + TBI and TBI groups was significant (31.9% vs. 20.2%, p < 0.01, Table 1) despite the two groups having similar GCS scores. Furthermore, the DVT rate was significantly higher in the PT + TBI group compared to the PT group (31.9% vs. 22.0%, p < 0.01, Table 1) despite a similar ISS. The mean number of days after admission for the first-time DVT diagnosis were 8.8 ± 3.8, 14.6 ± 4.2, and 13.9 ± 4.3 days in the PT + TBI, PT, and TBI groups, respectively. The results indicate that DVT in the PT + TBI group occurred at an earlier time point after admission than in the other two groups (p < 0.01, Table 1).
+
+3.3. DVT Risk Factors in the PT + TBI Group
+
+Overall, 31.9% of patients in the PT + TBI group (122/383, DVT+ subset) developed a DVT during their hospitalization. Given the high incidence of DVT in the PT + TBI population, the potential risk factors for DVT were assessed. Using univariate and multivariate analyses, we examined clinical parameters and defined potential risk factors in all 383 patients in the PT + TBI group, which proved to be significant in predicting an increase in DVT.
+
+In univariate analyses, older age, higher D-dimer levels, higher ISSs, higher GCS scores, and longer duration of ventilator use were associated with a higher risk of VTE in the PT + TBI group. In particular, patients with delayed mechanical prophylaxis and delayed anticoagulant therapy were more susceptible to developing a DVT in the PT + TBI group. In contrast, femoral fracture, skeletal traction, transfusions, the occurrence of complications, arteriovenous catheterization, and operations were not associated with a higher DVT rate. Significant predictive factors for DVT are listed in Table 2.
+
+After univariate analysis, those variables with a p-value < 0.05 were selected for multivariate analysis using a multiple logistic regression model. Delayed anticoagulant therapy, delayed mechanical prophylaxis, old age, and higher D-dimer levels were the significant and independent predictive risk factors for DVT occurrence (Table 3). Because no differences were found in analyses of age, level of D-dimer, and longer duration of ventilator use among the PT + TBI, PT, and TBI groups (Table 1), we hypothesized that delayed mechanical prophylaxis and delayed anticoagulant therapy were the major risk factors for the significantly higher DVT rate in PT + TBI patients.
+
+3.4. Demographics and Characteristics of Patients Diagnosed with PE
+
+In the current study, the diagnosis of PE was largely based on CTPA, which is the gold standard diagnostic technique for evaluating patients with suspected PE [10]. A total of 96 patients with clinically suspected PE received a CTPA examination, and PE was diagnosed in 59 patients. The incidence of PE in the study cohort was 6.8% (59/847). Of the 59 patients with PE, 38 were in the PT + TBI group (9.9%, 38/383), 11 in the TBI group (5.0%, 11/218), and 10 in the PT group (4.1%, 10/246). Most patients with PE were in the PT + TBI group (64.4%, 38/59), and the PE rate was significantly higher in the PT + TBI group compared to the PT (p < 0.01) or TBI (p < 0.05) group.
+
+In this study, all patients diagnosed with PE were evaluated with the Pulmonary Embolism Severity Index (PESI) [14]. Overall, 8 patients were categorized as class Ⅰ risk strata (very low mortality risk); 9 patients were categorized as class Ⅱ risk strata (low mortality risk); 17 patients were categorized as class Ⅲ risk strata (moderate mortality risk); 12 patients were categorized as class Ⅳ risk strata (high mortality risk); and 13 patients were categorized as class Ⅴ risk strata (very high mortality risk). Patients with PE categorized as class Ⅲ–Ⅴ risk strata had significantly higher PE severity and mortality risk. As shown in Table 4 and Figure 1, the proportion of patients with a severe PE risk score (class Ⅲ–Ⅴ risk strata) was significantly higher in the PT + TBI group than in other groups (p < 0.05).
+
+A total of 31 patients in the PT + TBI group died during their hospitalization, 8 (25.8%, 8/31) of whom were diagnosed with PE. However, only 3 of these deaths could be directly attributed to PE; the remaining deaths were caused by sepsis or multisystem organ dysfunction syndrome. We summarized the clinical data of the three patients who died from PE and found that all deaths occurred in male patients and patients with a severe PESI risk score (class Ⅲ–Ⅴ risk strata). One of the patients who died was placed on a prophylactic inferior vena cava filter (IVCF) before the diagnosis of PE using CTPA. During the early stage (≤3 days) after the initial injury, none of the three patients who died of PE received chemical anticoagulation, and only one received mechanical prophylaxis.
+
+4. Discussion
+
+The overall incidence of VTE in our study population and the VTE incidence in our TBI group are in line with previously published results from severely injured trauma patients [4,5,9]. However, few studies have reported the incidence of VTE in polytrauma patients with TBI. To our knowledge, this is the first multi-center trial to investigate the incidence of VTE simultaneously in three groups of trauma patients: PT with TBI, PT, and isolated TBI. Importantly, we verified our hypothesis that the presence of TBI further increases the risk of VTE in polytrauma patients. Moreover, we found that VTE occurred at an earlier time point after admission in the PT + TBI group than in the PT and isolated TBI groups.
+
+In our current study, severe traumatic injuries invariably increased the risk of VTE, which is consistent with previous studies. It has been widely acknowledged that acute trauma increases the rate of VTE and is responsible for approximately 8–12% of VTE episodes in the community [5,15]. Notably, this is the first study to suggest that TBI further increases the risk for VTE in polytrauma patients. One likely mechanism is that, compared to polytrauma patients, TBI increases prolonged immobility in polytrauma patients due to unconsciousness or impairment of brain motor function. Prolonged immobility is a common risk factor for VTE because it leads to reduced blood flow and venous stasis. Venous stasis, along with hypercoagulability and endothelial injury, is also involved in and contributes to the pathophysiology of venous thrombosis [16]. A systemic meta-analysis of epidemiological studies showed a significant increase in the risk for VTE in patients with reduced mobility, and a validation study for a risk assessment model (RAM) of VTE identified immobility as an important predictor for the occurrence of VTE [17].
+
+In contrast, Valle et al. found a similar VTE rate in PT + TBI compared to TBI patient groups, and concluded that TBI did not further increase the risk for VTE in polytrauma patients [18]. This difference may be due to their relatively small sample size (148 cases, single-center trial) and some differences in experimental design. Furthermore, another possible explanation for the lack of observed difference in the VTE rate between the two subgroups is that all enrolled patients used mechanical prophylaxis. However, in our present study, a considerable number of patients could not be treated with mechanical prophylaxis due to the frequent presence of lower extremity fractures or severe soft tissue damage. To date, there are no further studies investigating whether TBI increases the risk for VTE in polytrauma patients.
+
+Notably, we are the first to propose the idea that DVT in the PT + TBI group occurs at an earlier time point after admission than in the PT and isolated TBI groups. This may result from an increased burden and impact on the coagulation system. Recent investigations from TEG analysis have demonstrated that coagulopathy in critical polytrauma patients typically resolved within 24 h, followed by a transition into a hypercoagulable or prothrombotic state [19]. TBI usually leads to serious shock, acidosis, and hypothermia, which further impairs the abnormal coagulation system of polytrauma patients. Moreover, previous studies reported a unique TBI-associated coagulopathy associated with the systemic release of tissue factor and brain phospholipids during blood–brain barrier breakdown [20]. Thus, the coexistence of polytrauma and TBI may accelerate the formation of the prothrombotic state, leading to earlier thrombosis in the PT + TBI group.
+
+D-dimer is a biomarker of fibrin formation and degradation. In practice, the sensitivity of D-dimer for DVT and PE far exceeds the specificity of the test, especially in older patients. In our study, D-dimer levels were routinely measured upon admission, and the diagnosis of twelve VTE cases was established because of a high D-dimer level; eventually, D-dimer levels ≥5.0 µg/mL during hospitalization were identified as an independent predictor of VTE. A retrospective bioinformatics analysis conducted by Michael et al. identified neurosurgical inpatients who underwent a protocol assessing serum D-dimer levels and had a VDU study evaluating the presence of VTE, and reached the conclusion that the D-dimer protocol was efficient in screening for VTE during hospitalization [21].
+
+We hypothesize that delayed anticoagulant therapy and delayed physical prevention were the major risk factors for DVT in PT + TBI patients since no differences were found among the three groups in terms of age, D-dimer levels, or longer duration of ventilator use. In the present study, patients treated with delayed anticoagulant therapy were more susceptible to developing DVT (Table 2), which indicates that early pharmacological prophylaxis is extremely important for preventing DVT in PT + TBI patients. Nevertheless, to date, no clear guidelines exist with regard to the appropriate initial time at which to start pharmacological prophylaxis in patients with TBI. Many studies have examined the viability of this practice; for example, in neurosurgical patients, antithrombotic prophylaxis with certoparin was determined to be safe and effective, and after initiating early pharmacological prophylaxis, the rate of VTE in TBI patients decreased by approximately 50% [22]. Christopher et al. also found that early pharmacological prophylaxis was useful in controlling the number of complications from VTE and pulmonary embolism [23]. Taken together, it seems reasonable that VTE chemical prophylaxis should be undergone as early as possible. However, due to the lack of reliable recommendations, the initiation of chemical prophylaxis is currently mainly based on stable bleeding conditions in repeated head CT scans or on the physicians’ clinical experience.
+
+Mechanical prophylaxis is a critical approach to VTE prevention, especially for those patients with possibly life-threatening organ hemorrhages (cerebral, digestive, etc.). External mechanical devices, such as graded compression devices or intermittent pneumatic compression devices, have been shown to be effective in preventing DVT [24]. In our study population, the frequent presence of lower extremity fractures or severe soft tissue damage of the lower extremities made it difficult to apply external mechanical devices, which may have contributed to a higher DVT incidence in the PT + TBI group.
+
+The rate of PE was 6.9% (59/847) in our study, which is much higher than other reported rates of 1.0 to 3.7% in polytrauma patients [11,25]; this higher rate may have resulted from the high rate of CTPA examinations performed in our study population. The diagnosis of PE is usually confirmed with CTPA. CTPA examination is not recommended for patients without any clinical hint of PE. However, given the extreme severity of the disease in the PT + TBI group and the potentially fatal consequences of pulmonary embolism, in our current study, we tried to figure out the true incidence of PE. Therefore, we performed CTPA on some patients who presented with symptoms after weighing the risks and benefits. In this way, we can predict PE risks in advance and make emergency plans. Moreover, some patients with no anticoagulant contraindications may also be treated. The early clinical manifestations of PE are extremely nonspecific and in no way indicative of a PE diagnosis; therefore, PE is one of the most frequently missed diagnoses in primary care. Taken together, we suggest that the frequency and rate of CTPA examinations should be appropriately increased to determine the presence of PE in PT + TBI patients to decrease the incidence of adverse clinical events.
+
+Our study has some limitations, the most important of which is the retrospective nature with all of its restrictions on the study design. In our study, the diagnosis of DVT was mostly based on ultrasound examinations during the patient’s hospitalization; therefore, DVT that occurred as clinically insignificant DVT events may have been missed. Moreover, some patients were excluded because of the inability to perform lower limb ultrasounds. We also neglected to collect data on the time to mobilization and active infection or inflammation, which could contribute to the development of VTE. Given the multi-center design of the study, different kinds of anticoagulants were used, which may have influenced the incidence of VTE [26]. Finally, this study included patients that underwent surgery and those who did not, introducing an additional source of potential bias.
+
+In conclusion, this study characterizes polytrauma patients that are at high risk for VTE and emphasizes that TBI further increases the risk for DVT and PE in polytrauma patients. VTE occurred at an earlier time point after admission in the PT + TBI group than in the PT and isolated TBI groups. The subgroups (PT + TBI patients) demand more special attention in screening for DVT and PE during the early stage of trauma. Delayed anticoagulant therapy and delayed mechanical prophylaxis are identified as the major risk factors responsible for a higher incidence of VTE in polytrauma patients with TBI. Further prospective trials are warranted to evaluate the safety of early anticoagulant and mechanical prophylaxis in polytrauma patients with TBI.
+
+Acknowledgments
+
+We thank all nurses, students, and residents who rotated through the TICU, ICU, and Trauma Center for their cooperation.
+
+Author Contributions
+
+D.C. and Z.T. participated in the experimental design, the collection, analysis, and interpretation of data, and the drafting of the manuscript. L.T., J.L., C.Z., H.D., T.C., M.H., D.W., F.Z., M.W., M.Q., G.Y., L.D. and W.W. participated in the collection, analysis, and interpretation of data. G.Y., L.D., W.W., H.X., M.Q. and W.Z. participated in critical discussions and revised the manuscript. G.Y., W.W., L.D. and Z.T. are directly responsible for all aspects of this study. All authors have read and agreed to the published version of the manuscript.
+
+Institutional Review Board Statement
+
+The study was conducted according to the guidelines of the Declaration of Helsinki and approved by the ethics committees at Tongji Hospital, Suizhou Central Hospital, and Tianmen First People’s Hospital.
+
+Informed Consent Statement
+
+Informed consent to participate and consent to publish were obtained from each patient or the patient’s legally authorized representative involved in the study.
+
+Data Availability Statement
+
+All datasets presented in this study are included in the article; further inquiries can be directed to the corresponding author.
+
+Conflicts of Interest
+
+The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
+
+Abbreviations
+
+VTE: venous thrombus embolism; TBI: traumatic brain injury; DVT: deep venous thrombosis; PE: pulmonary embolism; CTA: computerized tomography angiography; PT: polytrauma; GCS: Glasgow Coma Scale; ISS: Injury Severity Score; AIS: Abbreviated Injury Scale; TIC: trauma-induced coagulopathy; TICU: traumatic intensive care unit; ICU: intensive care unit; VDU: venous Doppler ultrasound; CTPA: computed tomography pulmonary angiogram; LOS: length of stay; ROC: receiver operating characteristic; PESI: Pulmonary Embolism Severity Index; RAM: risk assessment model; TEG: thromboelastogram; IPC: intermittent pneumatic compression; IVCF: inferior vena cava filter; MOF: multiple organ failure; INR: international normalized ratio; APTT: activated partial thromboplastin time; HR: hazard ratio; CI: confidence interval; OR: odds ratio.
+
+Figure 1 The number of severe pulmonary embolism patients in different groups. PT: polytrauma; TBI: traumatic brain injury; PE: pulmonary embolism.
+
+jcm-12-01716-t001_Table 1 Table 1 Patient demographics and characteristics.
+
+	PT + TBI
+(n = 383)	PT
+(n = 246)	TBI
+(n = 218)	p-Value	
+Mean age (years)	50.3 ± 11.7	49.7 ± 10.4	50.1 ± 11.2	0.806	
+Males, n (%)	292 (76.2)	178 (72.4)	163 (74.8)	0.550	
+Hypertension, n (%)	70 (18.3)	41 (16.7)	47 (21.6)	0.404	
+Diabetes, n (%)	65 (17.0)	38 (15.4)	39 (17.9)	0.773	
+Hyperlipidemia, n (%)	109 (28.5)	83 (33.7)	59 (27.1)	0.231	
+Cerebral infarction, n (%)	3 (0.8)	2 (0.8)	3 (1.4)	0.746	
+Mean ISS	31.2 ± 6.9	30.4 ± 7.5	13.7 ± 3.4	<0.01	
+Mean GCS	10.4 ± 1.7	-	8.9 ± 2.1	<0.01	
+Pelvic fracture, n (%)	127 (33.2)	91 (37.0)	-	0.324	
+Thoracic injury, n (%)	197 (51.4)	134 (54.5)	-	0.457	
+Abdominal injury, n (%)	177 (44.6)	102 (41.5)	-	0.242	
+Transfusion					
+Red cells, n (%)	146 (38.1)	86 (35.0)	70 (32.1)	0.323	
+Fresh frozen plasma, n (%)	198 (51.7)	133 (54.1)	98 (45.0)	0.126	
+Complication					
+Pneumonia, n (%)	118 (30.8)	79 (32.1)	58 (26.6)	0.400	
+MOF, n (%)	38 (9.9)	30 (12.2)	14 (6.4)	0.108	
+Sepsis, n (%)	47 (12.3)	37 (15.0)	20 (9.2)	0.158	
+Ventilation days (days)	8.9 ± 4.6	9.1 ± 4.8	8.2 ± 5.1	0.104	
+Days in ICU (days)	14.2 ± 4.7	13.8 ± 4.4	13.6 ± 5.6	0.308	
+Operation, n (%)	292 (76.2)	172 (69.9)	52 (23.9)	<0.01	
+D-dimer (ug/mL)	10.2 ± 6.0	10.5 ± 5.7	10.1 ± 6.2	0.743	
+INR	1.18 ± 0.23	1.16 ± 0.27	1.15 ± 0.24	0.313	
+VTE, n (%)	122 (31.9)	54 (22.0)	44 (20.2)	<0.01	
+Days of VTE diagnosis (days)	8.8 ± 3.8	14.6 ± 4.2	13.9 ± 4.3	<0.01	
+Mortality, n (%)	31 (8.1)	10 (4.1)	9 (3.6)	0.049	
+All results are given as mean ± standard deviation or number (percentage). GCS: Glasgow Coma Scale; ICU: intensive care unit; ISS: Injury Severity Score; MOF: multiple organ failure; INR: international normalized ratio; PT: polytrauma; TBI: traumatic brain injury; VTE: venous thrombotic events. p < 0.05 is statistically significant.
+
+jcm-12-01716-t002_Table 2 Table 2 Risk factors for DVT in the PT + TBI group.
+
+Characteristic	DVT(+)
+(n = 122)	DVT(−)	p Value	
+Age (years)	54.2 ± 13.5	47.3 ± 10.2	<0.01	
+Males, n (%)	91 (74.6)	201 (77.0)	0.604	
+Diabetes, n (%)	13 (10.7)	24 (9.2)	0.652	
+Obesity, n (%)	19 (15.4)	46 (17.6)	0.595	
+ISS	34.1 ± 7.5	30.1 ± 6.3	<0.01	
+GCS	9.9 ± 1.5	10.6 ± 1.9	<0.01	
+Anatomical location of injury				
+Thoracic injury, n (%)	62 (50.8)	135 (51.7)	0.869	
+Abdominal injury, n (%)	60 (49.2)	117 (44.8)	0.426	
+Pelvic fracture, n (%)	38 (31.1)	89 (34.1)	0.567	
+Cervical/thoracic spinal cord, n (%)	13 (10.7)	35 (13.4)	0.448	
+Femoral fracture, n (%)	28 (23.0)	53 (20.4)	0.567	
+Transfusion				
+Red cells, n (%)	52 (42.6)	94 (36.0)	0.215	
+Fresh frozen plasma, n (%)	59 (48.4)	139 (53.3)	0.372	
+Complication				
+Sepsis, n (%)	19 (16.4)	28 (10.7)	0.119	
+Pneumonia, n (%)	45 (36.9)	73 (28.0)	0.078	
+MOF, n (%)	15 (12.3)	23 (8.8)	0.288	
+INR (%)	1.19 ± 0.22	1.16 ± 0.25	0.257	
+APTT (s)	40.1 ± 11.6	38.6 ± 10.2	0.200	
+D-dimer (ug/mL)	12.3 ± 6.2	9.1 ± 5.9	<0.01	
+Ventilator days (days)	12.4 ± 5.7	6.8 ± 3.4	<0.01	
+ICU LOS (days)	14.7 ± 5.3	13.9 ± 4.5	0.127	
+First day of chemical prophylaxis ≤ 3 d, n (%)	19 (15.6)	98 (37.5)	<0.01	
+First day of mechanical prophylaxis ≤ 3 d, n (%)	51 (41.8)	157 (60.2)	<0.01	
+Skeletal traction, n (%)	37 (30.3)	67 (25.7)	0.340	
+Operation, n (%)	97 (79.5)	195 (74.7)	0.304	
+All values are presented as mean ± standard deviation or number(percentage). APTT: activated partial thromboplastin time DVT: deep vein thrombosis; GCS: Glasgow Coma Scale; ICU: intensive care unit; ISS: Injury Severity Score; LOS: length of stay; MOF: multiple organ failure; INR: international normalized ratio. p < 0.05 is statistically significant.
+
+jcm-12-01716-t003_Table 3 Table 3 Logistic regression model for risk factors associated with DVT in PT + TBI patients.
+
+Risk Factors	Univariate HR
+(95% CI)	p Value	Multivariate OR
+(95% CI)	p Value	
+Age	1.047 (1.016–1.079)	0.003	1.064 (1.018–1.111)	0.006	
+Mechanical prophylaxis	0.345 (0.144–0.829)	0.017	0.072 (0.014–0.353)	0.001	
+Chemical prophylaxis	0.299 (0.102–0.874)	0.027	0.173 (0.036–0.825)	0.028	
+D-dimer	1.108 (1.040–1.180)	0.001	1.111 (1.012–1.220)	0.028	
+Ventilator days	1.004 (1.001–1.007)	0.006	1.003 (0.999–1.008)	0.137	
+Femoral fracture	1.286 (0.476–3.470)	0.620	1.794 (0.363–8.853)	0.473	
+Skeletal traction	1.156 (0.564–4.290)	0.393	0.763 (0.128–4.559)	0.767	
+ISS	1.067 (1.026–1.109)	0.001	1.046 (0.980–1.117)	0.175	
+GCS	0.895 (0.813–0.985)	0.024	0.986 (0.837–1.162)	0.864	
+Diabetes	1.245 (0.337–4.602)	0.743	0.826 (0.117–5.844)	0.848	
+Obesity	0.783 (0.253–2.424)	0.672	0.724 (0.097–5.382)	0.752	
+CI: confidence interval; GCS: Glasgow Coma Scale; HR: hazard ratio; ISS: Injury Severity Score; OR: odds ratio. p-value < 0.05 is statistically significant.
+
+jcm-12-01716-t004_Table 4 Table 4 Classification of PE severity based on the Pulmonary Embolism Severity Index (PESI).
+
+Risk Strata	PT + TBI (n = 37)	TBI (n = 12)	PT (n = 12)	
+Class I	2	5	4	
+Class II	3	4	4	
+Class Ⅲ	8	2	3	
+Class IV risk strata	15	1	1	
+Class V risk strata	9	0	0	
+Class IV	15	1	1	
+Class V	9	0	0	
+Higher PE severity and mortality risk (%)	86.5	25	33.3	
+PE: pulmonary embolism; PT: polytrauma; TBI: traumatic brain injury.
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+==== Refs
+References
+
+1. Pape H.C. Lefering R. Butcher N. Peitzman A. Leenen L. Marzi I. Lichte P. Josten C. Bouillon B. Schmucker U. The definition of polytrauma revisited: An international consensus process and proposal of the new ’Berlin definition’ J. Trauma Acute Care Surg. 2014 77 780 786 10.1097/TA.0000000000000453 25494433
+2. Luo J. Chen D. Tang L. Deng H. Zhang C. Chen S. Chang T. Dong L. Wang W. Xu H. Multifactorial Shock: A Neglected Situation in Polytrauma Patients J. Clin. Med. 2022 11 6829 10.3390/jcm11226829 36431304
+3. Brohi K. Singh J. Heron M. Coats T. Acute traumatic coagulopathy J. Trauma 2003 54 1127 1130 10.1097/01.TA.0000069184.82147.06 12813333
+4. Geerts W.H. Code K.I. Jay R.M. Chen E. Szalai J.P. A prospective study of venous thromboembolism after major trauma N. Engl. J. Med. 1994 331 1601 1606 10.1056/NEJM199412153312401 7969340
+5. Ruskin K.J. Deep vein thrombosis and venous thromboembolism in trauma Curr. Opin. Anaesthesiol. 2018 31 215 218 10.1097/ACO.0000000000000567 29334497
+6. Ho K.M. Burrell M. Rao S. Baker R. Incidence and risk factors for fatal pulmonary embolism after major trauma: A nested cohort study Br. J. Anaesth. 2010 105 596 602 10.1093/bja/aeq254 20861095
+7. Pfeifer R. Tarkin I.S. Rocos B. Pape H.C. Patterns of mortality and causes of death in polytrauma patients--has anything changed? Injury 2009 40 907 911 10.1016/j.injury.2009.05.006 19540488
+8. Roozenbeek B. Maas A.I. Menon D.K. Changing patterns in the epidemiology of traumatic brain injury Nat. Rev. Neurol. 2013 9 231 236 10.1038/nrneurol.2013.22 23443846
+9. Denson K. Morgan D. Cunningham R. Nigliazzo A. Brackett D. Lane M. Smith B. Albrecht R. Incidence of venous thromboembolism in patients with traumatic brain injury Am. J. Surg. 2007 193 380 383 discussion 383–384 10.1016/j.amjsurg.2006.12.004 17320539
+10. Konstantinides S.V. Meyer G. Becattini C. Bueno H. Geersing G.J. Harjola V.P. Huisman M.V. Humbert M. Jennings C.S. Jimenez D. 2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism developed in collaboration with the European Respiratory Society (ERS): The Task Force for the diagnosis and management of acute pulmonary embolism of the European Society of Cardiology (ESC) Eur. Respir. J. 2019 54 543 603
+11. Allen C.J. Murray C.R. Meizoso J.P. Ginzburg E. Schulman C.I. Lineen E.B. Namias N. Proctor K.G. Surveillance and Early Management of Deep Vein Thrombosis Decreases Rate of Pulmonary Embolism in High-Risk Trauma Patients J. Am. Coll. Surg. 2016 222 65 72 10.1016/j.jamcollsurg.2015.10.014 26616034
+12. Carney N. Totten A.M. O’Reilly C. Ullman J.S. Hawryluk G.W. Bell M.J. Bratton S.L. Chesnut R. Harris O.A. Kissoon N. Guidelines for the Management of Severe Traumatic Brain Injury, Fourth Edition Neurosurgery 2017 80 6 15 10.1227/NEU.0000000000001432 27654000
+13. Bouillon B. Pieper D. Flohe S. Eikermann M. Prengel P. Ruchholtz S. Stuermer K.M. Waydhas C. Trentzsch H. Lendemans S. Polytrauma Guideline Update G: Level 3 guideline on the treatment of patients with severe/multiple injuries: AWMF Register-Nr. 012/019 Eur. J. Trauma Emerg. Surg. 2018 44 3 271
+14. Jimenez D. Aujesky D. Moores L. Gomez V. Lobo J.L. Uresandi F. Otero R. Monreal M. Muriel A. Yusen R.D. Simplification of the pulmonary embolism severity index for prognostication in patients with acute symptomatic pulmonary embolism Arch. Intern. Med. 2010 170 1383 1389 10.1001/archinternmed.2010.199 20696966
+15. Heit J.A. O’Fallon W.M. Petterson T.M. Lohse C.M. Silverstein M.D. Mohr D.N. Melton L.J. 3rd Relative impact of risk factors for deep vein thrombosis and pulmonary embolism: A population-based study Arch. Intern. Med. 2002 162 1245 1248 10.1001/archinte.162.11.1245 12038942
+16. Schina M.J. Jr. Neumyer M.M. Healy D.A. Atnip R.G. Thiele B.L. Influence of age on venous physiologic parameters J. Vasc. Surg. 1993 18 749 752 10.1016/0741-5214(93)90327-I 8230559
+17. Woller S.C. Stevens S.M. Jones J.P. Lloyd J.F. Evans R.S. Aston V.T. Elliott C.G. Derivation and validation of a simple model to identify venous thromboembolism risk in medical patients Am. J. Med. 2011 124 947 954e942 10.1016/j.amjmed.2011.06.004 21962315
+18. Valle E.J. Van Haren R.M. Allen C.J. Jouria J.M. Bullock M.R. Schulman C.I. Namias N. Livingstone A.S. Proctor K.G. Does traumatic brain injury increase the risk for venous thromboembolism in polytrauma patients? J. Trauma Acute Care Surg. 2014 77 243 250 10.1097/TA.0000000000000307 25058249
+19. Sumislawski J.J. Kornblith L.Z. Conroy A.S. Callcut R.A. Cohen M.J. Dynamic coagulability after injury: Is delaying venous thromboembolism chemoprophylaxis worth the wait? J. Trauma Acute Care Surg. 2018 85 907 914 10.1097/TA.0000000000002048 30124623
+20. Maegele M. Aversa J. Marsee M.K. McCauley R. Chitta S.H. Vyakaranam S. Walsh M. Changes in Coagulation following Brain Injury Semin. Thromb. Hemost. 2020 46 155 166 10.1055/s-0040-1702178 32160642
+21. Karsy M. Azab M.A. Harper J. Abou-Al-Shaar H. Guan J. Eli I. Brock A.A. Ormond R.D. Hosokawa P.W. Gouripeddi R. Evaluation of a D-Dimer Protocol for Detection of Venous Thromboembolism World Neurosurg. 2020 133 e774 e783 10.1016/j.wneu.2019.09.160 31605841
+22. Kleindienst A. Harvey H.B. Mater E. Bronst J. Flack J. Herenz K. Haupt W.F. Schon R. Early antithrombotic prophylaxis with low molecular weight heparin in neurosurgery Acta Neurochir. 2003 145 1085 1090 discussion 1090–1081 10.1007/s00701-003-0142-y 14663565
+23. Nickele C.M. Kamps T.K. Medow J.E. Safety of a DVT chemoprophylaxis protocol following traumatic brain injury: A single center quality improvement initiative Neurocrit. Care 2013 18 184 192 10.1007/s12028-012-9786-x 23099845
+24. Velmahos G.C. Kern J. Chan L.S. Oder D. Murray J.A. Shekelle P. Prevention of venous thromboembolism after injury: An evidence-based report-part I: Analysis of risk factors and evaluation of the role of vena caval filters J. Trauma 2000 49 132 138 discussion 139 10.1097/00005373-200007000-00020 10912869
+25. Lichte P. Kobbe P. Almahmoud K. Pfeifer R. Andruszkow H. Hildebrand F. Lefering R. Pape H.C. Trauma Register DGU: Post-traumatic thrombo-embolic complications in polytrauma patients Int. Orthop. 2015 39 947 954 10.1007/s00264-015-2698-6 25690923
+26. Beitland S. Sandven I. Kjaervik L.K. Sandset P.M. Sunde K. Eken T. Thromboprophylaxis with low molecular weight heparin versus unfractionated heparin in intensive care patients: A systematic review with meta-analysis and trial sequential analysis Intensive Care Med. 2015 41 1209 1219 10.1007/s00134-015-3840-z 25971389
+
