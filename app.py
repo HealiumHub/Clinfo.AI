@@ -12,6 +12,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from utilities import (
     afetch_full_article_content,
     fetch_full_article_content,
+    get_PMCID_path,
     nrpm,
     post_process_answer,
     search_articles,
@@ -48,10 +49,11 @@ def search(payload: SearchPayload):
     )
 
     # Display sample result (you would replace this with actual search results)
-    translate_synthesis = nrpm.translate_en_to_vn(synthesis)
+    # translate_synthesis = nrpm.translate_en_to_vn(synthesis)
 
     for article in article_summaries:
         article["summary"] = highlight_summary(article["summary"])
+        article["PMCID_path"] = get_PMCID_path(f"{article["PMCID"]}.txt")
 
     return JSONResponse(
         content={
@@ -59,7 +61,7 @@ def search(payload: SearchPayload):
                 "content": post_process_answer(synthesis),
                 "citations": citations,
             },
-            "translate_synthesis": translate_synthesis,
+            "translate_synthesis": "",
             "article_summaries": article_summaries,
         },
         status_code=status.HTTP_200_OK,

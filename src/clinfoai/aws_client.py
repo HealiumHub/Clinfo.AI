@@ -1,15 +1,25 @@
+from email.policy import strict
+from fileinput import filename
+import string
+from typing import Optional
 import boto3
 import aioboto3
 from botocore import UNSIGNED
 from botocore.client import Config
 import asyncio
 import os
-from botocore.exceptions import ClientError  # Import ClientError
+from botocore.exceptions import ClientError
+from sqlalchemy import null  # Import ClientError
 
 
 class S3Client:
     bucket_name = "pmc-oa-opendata"
-    object_name = "oa_comm/txt/all/"
+    object_names = [
+        "oa_comm/txt/all/",
+        "oa_noncomm/txt/all/",
+        "phe_timebound/txt/all/",
+        "author_manuscript/txt/all/",
+    ]
     download_folder = "pmc_txt"
 
     def __init__(self):
@@ -35,7 +45,9 @@ class S3Client:
     async def async_download_files(self, file_names: list[str]):
         if self.as3 is None:
             await self.init_async_client()
-        async with self.as3.client("s3", config=Config(signature_version=UNSIGNED)) as s3:
+        async with self.as3.client(
+            "s3", config=Config(signature_version=UNSIGNED)
+        ) as s3:
             for file_name in file_names:
                 download_path = os.path.join(self.download_folder, file_name)
                 object_name = f"{self.object_name}{file_name}"
@@ -45,15 +57,30 @@ class S3Client:
                 except ClientError as e:
                     print(f"Error downloading {file_name}: {e}")
 
+    def check_file_existence(self, file_name: str) -> Optional[str]:
+        for object_name in self.object_names:
+            path = f"{object_name}{file_name}"
+            try:
+                self.s3.head_object(Bucket=self.bucket_name, Key=path)
+                return path
+            except ClientError as e:
+                if e.response["Error"]["Code"] != "404":
+                    print(f"Error checking existence of {file_name}: {e}")
+        return None
+
 
 if __name__ == "__main__":
-    # Example usage
+    # # Example usage
+    # s3_client = S3Client()
+    # s3_client.download_files(["PMC10003318.txt", "PMC10003319.txt"])
+
+    # # Asynchronous example usage
+    # async def main():
+    #     s3_client = S3Client()
+    #     await s3_client.async_download_files(["PMC10003318.txt", "PMC10003319.txt"])
+
+    # asyncio.run(main())
+
+    # Check if files exist
     s3_client = S3Client()
-    s3_client.download_files(["PMC10003318.txt", "PMC10003319.txt"])
-
-    # Asynchronous example usage
-    async def main():
-        s3_client = S3Client()
-        await s3_client.async_download_files(["PMC10003318.txt", "PMC10003319.txt"])
-
-    asyncio.run(main())
+    print(s3_client.check_file_existence("PMC28636.txt"))

@@ -74,7 +74,7 @@ class Reranker:
         return scores[0] > RELEVANT_THRESHOLD
 
 
-# reranker = Reranker()
+reranker = Reranker()
 
 
 def subtract_n_years(date_str: str, n: int = 20) -> str:
@@ -552,8 +552,8 @@ class PubMedNeuralRetriever:
         try:
             abstract = article["MedlineCitation"]["Article"]["Abstract"]["AbstractText"]
             abstract = self.reconstruct_abstract(abstract)
-            article_is_relevant = self.is_article_relevant(abstract, question)
-            # article_is_relevant = self.is_article_relevant_reranker(abstract, question)
+            # article_is_relevant = self.is_article_relevant(abstract, question)
+            article_is_relevant = self.is_article_relevant_reranker(abstract, question)
             citation = self.construct_citation(article)
             if self.verbose:
                 print(citation)

@@ -1,4 +1,5 @@
 import os
+from typing import Optional
 
 # Make Sure you followed at least step 1-2 before running this cell.
 from src.clinfoai.aws_client import S3Client
@@ -66,6 +67,12 @@ async def afetch_full_article_content(article_ids: list[str]):
 
     # asyncio.run(main())
 
+
 # {
 #     "file_ids": ["PMC8740363.txt", "PMC9844886.txt"]
 # }
+
+
+def get_PMCID_path(file_name: str) -> Optional[str]:
+    s3_client = S3Client()
+    return s3_client.check_file_existence(file_name)
