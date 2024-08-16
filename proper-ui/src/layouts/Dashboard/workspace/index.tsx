@@ -1,17 +1,11 @@
 import { PlaceholdersAndVanishInput } from '@/components/ui/placeholders-and-vanish-input';
 import React from 'react'
+import { placeholders } from './const';
+import { WavyBackground } from '@/components/ui/wavy-background';
 
 type Props = {}
 
 const Workspace = (props: Props) => {
-    const placeholders = [
-        "What's the first rule of Fight Club?",
-        "Who is Tyler Durden?",
-        "Where is Andrew Laeddis Hiding?",
-        "Write a Javascript method to reverse a string",
-        "How to assemble your own PC?",
-    ];
-
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         console.log(e.target.value);
     };

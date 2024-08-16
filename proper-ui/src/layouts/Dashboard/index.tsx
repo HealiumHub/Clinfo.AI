@@ -6,6 +6,7 @@ import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuL
 import { Link } from "react-router-dom";
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { WavyBackground } from '@/components/ui/wavy-background';
 
 // const Dashboard = () => {
 //   const [open, setOpen] = useState(false);
@@ -58,7 +59,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel,
 const Dashboard = () => {
   return (
     <div>
-      <nav className='flex flex-row justify-between p-4'>
+      <nav className='align-top sticky w-screen flex flex-row justify-between p-4'>
         <Logo />
         <div className='flex flex-row items-center gap-4'>
           <NavigationMenu>
