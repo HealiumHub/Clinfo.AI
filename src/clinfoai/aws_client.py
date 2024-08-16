@@ -32,12 +32,12 @@ class S3Client:
     async def init_async_client(self):
         self.as3 = aioboto3.Session()
 
-    def download_files(self, file_names: list[str]):
-        for file_name in file_names:
+    def download_files(self, file_paths: list[str]):
+        for file_path in file_paths:
+            file_name = file_path.split("/")[-1]
             download_path = os.path.join(self.download_folder, file_name)
-            object_name = f"{self.object_name}{file_name}"
             try:
-                self.s3.download_file(self.bucket_name, object_name, download_path)
+                self.s3.download_file(self.bucket_name, file_path, download_path)
                 print(f"File downloaded to {download_path}")
             except ClientError as e:
                 print(f"Error downloading {file_name}: {e}")
