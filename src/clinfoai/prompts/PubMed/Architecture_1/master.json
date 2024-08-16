@@ -15,13 +15,17 @@
 		"synthesize_prompt": {
 			"system": "task_4_sys.json",
 			"template": "task_4_prompt.json"
+		},
+		"follow_up_prompt": {
+			"system": "follow_up_sys.json",
+			"template": "follow_up_prompt.json"
 		}
 	},
-
 	"$order": [
 		"pubmed_query_prompt",
 		"relevance_prompt",
 		"summarization_prompt",
-		"synthesize_prompt"
+		"synthesize_prompt",
+		"follow_up_prompt"
 	]
 }

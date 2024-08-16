@@ -20,3 +20,4 @@ src/clinfoai/utils/__pycache__/
 
 PMData/
 .DS_Store
+pmc_txt/*.txt

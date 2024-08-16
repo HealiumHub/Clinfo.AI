@@ -13,6 +13,7 @@ from utilities import (
     afetch_full_article_content,
     fetch_full_article_content,
     get_PMCID_path,
+    get_full_article_content_from_disk,
     nrpm,
     post_process_answer,
     search_articles,
@@ -70,21 +71,29 @@ def search(payload: SearchPayload):
 
 @app.post("/analyse/files")
 def analyse_files(payload: AnalyseFilesPayload):
-    fetch_full_article_content(payload.file_ids)
-    # asyncio.run(afetch_full_article_content(payload.file_ids))
-    return JSONResponse(
-        content={"message": "Files downloaded successfully"},
-        status_code=status.HTTP_200_OK,
+    article_paths = [article["PMCID_path"] for article in payload.article_summaries]
+    fetch_full_article_content(article_paths)
+
+    article_text_file_names = [
+        f"{article["PMCID"]}.txt" for article in payload.article_summaries
+    ]
+    file_contents = get_full_article_content_from_disk(article_text_file_names)
+
+    for article, file_name in zip(payload.article_summaries, article_text_file_names):
+        article["full_text"] = file_contents[file_name]
+
+    answer, citations = nrpm.synthesize_from_full_text_articles(
+        payload.question, payload.article_summaries
     )
 
-    # return JSONResponse(
-    #     content={
-    #         "synthesis": {
-    #             "content": post_process_answer(synthesis),
-    #             "citations": citations,
-    #         },
-    #         "translate_synthesis": translate_synthesis,
-    #         "article_summaries": article_summaries,
-    #     },
-    #     status_code=status.HTTP_200_OK,
-    # )
+    return JSONResponse(
+        content={
+            "synthesis": {
+                "content": post_process_answer(answer),
+                "citations": citations,
+            },
+            # "translate_synthesis": translate_synthesis,
+            "article_summaries": payload.article_summaries,
+        },
+        status_code=status.HTTP_200_OK,
+    )

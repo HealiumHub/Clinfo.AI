@@ -74,7 +74,7 @@ class Reranker:
         return scores[0] > RELEVANT_THRESHOLD
 
 
-reranker = Reranker()
+# reranker = Reranker()
 
 
 def subtract_n_years(date_str: str, n: int = 20) -> str:
@@ -654,6 +654,26 @@ class PubMedNeuralRetriever:
 
         return article_summaries_with_citations, citations
 
+    def build_citations_and_full_text(
+        self,
+        article_summaries: dict,
+    ) -> tuple:
+        article_summaries_with_citations = []
+        citations: list[dict] = []
+        for i, summary in enumerate(article_summaries):
+            citation = re.sub(r"\n", "", summary["citation"])
+
+            citations.append({"index": i + 1, "url": summary["url"], "text": citation})
+
+            article_summaries_with_citations.append(
+                f"[{i+1}] Source: {citation}\n\n\n {summary['full_text']}"
+            )
+        article_summaries_with_citations = "\n\n--------------------------------------------------------------\n\n".join(
+            article_summaries_with_citations
+        )
+
+        return article_summaries_with_citations, citations
+
     def synthesize_all_articles(
         self,
         summaries,
@@ -722,6 +742,49 @@ class PubMedNeuralRetriever:
             )
 
             return result, citations
+
+    def synthesize_from_full_text_articles(
+        self,
+        question: str,
+        summaries_and_full_text: list[dict],
+    ) -> str:
+        article_full_text_str, citations = self.build_citations_and_full_text(
+            article_summaries=summaries_and_full_text
+        )
+
+        system_prompt = self.architecture.get_prompt(
+            "follow_up_prompt", "system"
+        ).format()
+        user_prompt = self.architecture.get_prompt("follow_up_prompt", "template")
+        print(user_prompt)
+        system_message_prompt = SystemMessagePromptTemplate.from_template(system_prompt)
+        human_message_prompt = HumanMessagePromptTemplate(
+            prompt=PromptTemplate(
+                template=user_prompt.format(
+                    question="{question}",
+                    article_full_text_str="{article_full_text_str}",
+                ),
+                input_variables=["question", "article_full_text_str"],
+            )
+        )
+
+        chat_prompt = ChatPromptTemplate.from_messages(
+            [system_message_prompt, human_message_prompt]
+        )
+        chat_prompt = chat_prompt.format_prompt(
+            question=question, article_full_text_str=article_full_text_str
+        ).to_messages()
+        result = self.query_api(
+            model=self.model,
+            prompt=chat_prompt,
+            temperature=self.temperature,
+            max_tokens=1024,
+            n=1,
+            stop=None,
+            delay=self.time_out,
+        )
+
+        return result, citations
 
     def translate_en_to_vn(self, text: str) -> str:
         t = TranslationEngine(key=os.environ["GOOGLE_API_KEY"])

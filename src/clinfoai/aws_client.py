@@ -29,13 +29,32 @@ class S3Client:
         # Create the directory if it doesn't exist
         os.makedirs(self.download_folder, exist_ok=True)
 
+    def read_many_files_from_disk(self, file_names: list[str]):
+        return {
+            file_name: self.read_file_from_disk(file_name) for file_name in file_names
+        }
+
+    def read_file_from_disk(self, file_name: str):
+        file_path = os.path.join(self.download_folder, file_name)
+        with open(file_path, "r") as file:
+            return file.read()
+
     async def init_async_client(self):
         self.as3 = aioboto3.Session()
 
     def download_files(self, file_paths: list[str]):
         for file_path in file_paths:
             file_name = file_path.split("/")[-1]
+
+            # If folder does not exist, create it
+            if not os.path.exists(self.download_folder):
+                os.makedirs(self.download_folder)
+
             download_path = os.path.join(self.download_folder, file_name)
+            # If folder containing the file does not exist, create it
+            if not os.path.exists(os.path.dirname(download_path)):
+                os.makedirs(os.path.dirname(download_path))
+
             try:
                 self.s3.download_file(self.bucket_name, file_path, download_path)
                 print(f"File downloaded to {download_path}")

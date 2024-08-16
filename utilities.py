@@ -61,6 +61,11 @@ def fetch_full_article_content(article_ids: list[str]):
     s3_client.download_files(article_ids)
 
 
+def get_full_article_content_from_disk(article_ids: list[str]):
+    s3_client = S3Client()
+    return s3_client.read_many_files_from_disk(article_ids)
+
+
 async def afetch_full_article_content(article_ids: list[str]):
     s3_client = S3Client()
     await s3_client.async_download_files(article_ids)
