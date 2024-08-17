@@ -6,7 +6,7 @@ import Root from "./layouts/Root";
 import Auth from "./layouts/Auth";
 import Dashboard from "./layouts/Dashboard";
 import Chat from "./layouts/Dashboard/Chat";
-import Workspace from './layouts/Dashboard/workspace';
+import Workspace from './layouts/Dashboard/Workspace';
 
 const router = createBrowserRouter([
   {
