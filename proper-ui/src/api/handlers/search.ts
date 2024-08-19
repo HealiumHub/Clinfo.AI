@@ -5,7 +5,7 @@
 
 import axios, { AxiosError, AxiosRequestHeaders, AxiosResponse } from 'axios';
 import queryString from 'query-string';
-import { ClinfoResponse } from '../types';
+import { ClinfoResponse, ClinfoResponseAnalyzeFiles } from '../types';
 import { mock } from 'node:test';
 
 const AxiosClient = axios.create({
@@ -25,6 +25,16 @@ const ClinfoAPI = {
 	},
 	mockSearchAbstract: async (question: string) => {
 		return AxiosClient.post<ClinfoResponse>(`/mock/search`, {
+			question: question,
+		});
+	},
+	searchAnalyzeFiles: async (question: string) => {
+		return AxiosClient.post<ClinfoResponseAnalyzeFiles>(`/analyse/files`, {
+			question: question,
+		});
+	},
+	mockSearchAnalyzeFiles: async (question: string) => {
+		return AxiosClient.post<ClinfoResponseAnalyzeFiles>(`/mock/analyse/files`, {
 			question: question,
 		});
 	},
