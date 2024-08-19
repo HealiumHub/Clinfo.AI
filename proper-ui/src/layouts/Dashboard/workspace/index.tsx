@@ -1,29 +1,44 @@
-import { PlaceholdersAndVanishInput } from '@/components/ui/placeholders-and-vanish-input';
-import React from 'react'
-import { placeholders } from './const';
-import { WavyBackground } from '@/components/ui/wavy-background';
+import { useState } from 'react';
+import InitialPromptSection from './InitialPromptSection';
+import ResponseSection from './ResponseSection';
 
 type Props = {}
 
-const Workspace = (props: Props) => {
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        console.log(e.target.value);
-    };
-    const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        console.log("submitted");
-    };
+enum SectionType {
+    INITIAL_PROMPT = 'INITIAL_PROMPT',
+    FOLLOW_UP = 'FOLLOW_UP',
+    RESULT = 'RESULT',
+}
+
+type Section = {
+    type: SectionType;
+    content: any;
+}
+
+const Workspace: React.FC<Props> = (props) => {
+    const [sections, setSections] = useState<[Section]>([{
+        type: SectionType.INITIAL_PROMPT,
+        content: null,
+    }]);
+
     return (
-        <div className="flex flex-col justify-center items-center px-4 pt-4">
-            <h2 className="mb-10 sm:mb-20 text-xl text-center sm:text-5xl dark:text-white text-black">
-                Ask HealthLight Anything
-            </h2>
-            <PlaceholdersAndVanishInput
-                placeholders={placeholders}
-                onChange={handleChange}
-                onSubmit={onSubmit}
-            />
-        </div>
+        sections.map((section, idx) => {
+            switch (section.type) {
+                case SectionType.INITIAL_PROMPT:
+                    console.log('Test');
+                    return <InitialPromptSection key={idx} updateSections={(data) => {
+                        setSections((prevState => [...prevState, { type: SectionType.RESULT, content: data }]));
+                    }} />;
+                case SectionType.FOLLOW_UP:
+                    return null;
+                // return <FollowUpSection />;
+                case SectionType.RESULT:
+                    console.log('Test');
+                    return <ResponseSection key={idx} result={section.content} />;
+                default:
+                    return null;
+            }
+        })
     );
 }
 

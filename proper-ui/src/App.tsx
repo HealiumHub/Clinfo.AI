@@ -7,7 +7,7 @@ import Auth from "./layouts/Auth";
 import Dashboard from "./layouts/Dashboard";
 import Chat from "./layouts/Dashboard/Chat";
 import Workspace from './layouts/Dashboard/Workspace';
-
+import { QueryClient, QueryClientProvider } from 'react-query'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -51,12 +51,17 @@ const router = createBrowserRouter([
   },
 ]);
 
+// Create a client
+const queryClient = new QueryClient()
+
 function App() {
   return (
     <>
-      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <RouterProvider router={router} />
-      </ThemeProvider>
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+          <RouterProvider router={router} />
+        </ThemeProvider>
+      </QueryClientProvider>
     </>
   );
 }

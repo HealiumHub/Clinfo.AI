@@ -74,7 +74,7 @@ class Reranker:
         return scores[0] > RELEVANT_THRESHOLD
 
 
-# reranker = Reranker()
+reranker = Reranker()
 
 
 def subtract_n_years(date_str: str, n: int = 20) -> str:
