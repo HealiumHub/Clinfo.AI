@@ -10,14 +10,14 @@ export interface ArticleSummary {
   summary: string;
 }
 
-export interface ArticleSummaryAnalyzeFiles extends ArticleSummary {
+export interface ArticleSummaryFollowup extends ArticleSummary {
   full_text: string;
 }
 
-export interface ClinfoResponseAnalyzeFiles {
+export interface ClinfoResponseFollowup {
   synthesis: ClinfoSynthesis;
   translate_synthesis: string;
-  article_summaries: ArticleSummaryAnalyzeFiles[];
+  article_summaries: ArticleSummaryFollowup[];
 }
 
 export interface ClinfoResponse {
