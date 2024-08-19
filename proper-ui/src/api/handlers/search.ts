@@ -29,12 +29,12 @@ const ClinfoAPI = {
 		});
 	},
 	searchAnalyzeFiles: async (question: string) => {
-		return AxiosClient.post<ClinfoResponseAnalyzeFiles>(`/analyse/files`, {
+		return AxiosClient.post<ClinfoResponseAnalyzeFiles>(`/search/follow-up`, {
 			question: question,
 		});
 	},
 	mockSearchAnalyzeFiles: async (question: string) => {
-		return AxiosClient.post<ClinfoResponseAnalyzeFiles>(`/mock/analyse/files`, {
+		return AxiosClient.post<ClinfoResponseAnalyzeFiles>(`/mock/search/follow-up`, {
 			question: question,
 		});
 	},

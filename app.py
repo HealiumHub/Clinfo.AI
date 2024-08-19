@@ -71,7 +71,7 @@ def search(payload: SearchPayload):
     )
 
 
-@app.post("/analyse/files")
+@app.post("/search/follow-up")
 def analyse_files(payload: AnalyseFilesPayload):
     article_paths = [article["PMCID_path"] for article in payload.article_summaries]
     fetch_full_article_content(article_paths)
@@ -113,10 +113,10 @@ def mockSearch(payload: SearchPayload):
     )
 
 
-@app.post("/mock/analyse/files")
+@app.post("/mock/search/follow-up")
 def mockAnalyzeFiles(payload: SearchPayload):
     time.sleep(3)
-    with open("mock_response/mock_analyze_files.json") as f:
+    with open("mock_response/mock_search_follow_up.json") as f:
         data = json.load(f)
 
     return JSONResponse(
