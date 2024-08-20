@@ -28,6 +28,8 @@ from langchain_core.messages.system import SystemMessage
 from openai import OpenAI
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
+from models import ArticleSummary
+
 sys.path.append(str(Path(__file__).resolve().parent))
 from dense_search import PubMedDenseSearch, generate_paths
 from translator import TranslationEngine
@@ -656,17 +658,17 @@ class PubMedNeuralRetriever:
 
     def build_citations_and_full_text(
         self,
-        article_summaries: dict,
+        article_summaries: list[ArticleSummary],
     ) -> tuple:
         article_summaries_with_citations = []
         citations: list[dict] = []
         for i, summary in enumerate(article_summaries):
-            citation = re.sub(r"\n", "", summary["citation"])
+            citation = re.sub(r"\n", "", summary.citation)
 
-            citations.append({"index": i + 1, "url": summary["url"], "text": citation})
+            citations.append({"index": i + 1, "url": summary.url, "text": citation})
 
             article_summaries_with_citations.append(
-                f"[{i+1}] Source: {citation}\n\n\n {summary['full_text']}"
+                f"[{i+1}] Source: {citation}\n\n\n {summary.full_text}"
             )
         article_summaries_with_citations = "\n\n--------------------------------------------------------------\n\n".join(
             article_summaries_with_citations

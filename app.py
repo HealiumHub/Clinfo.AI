@@ -7,12 +7,13 @@ from fastapi.responses import JSONResponse
 import asyncio
 
 # Make Sure you followed at least step 1-2 before running this cell.
-from models import AnalyseFilesPayload, SearchPayload
+from models import SearchFollowupPayload, SearchPayload
 from fastapi.middleware.cors import CORSMiddleware
 import time
 
 from utilities import (
     afetch_full_article_content,
+    extract_summary_into_parts,
     fetch_full_article_content,
     get_PMCID_path,
     get_full_article_content_from_disk,
@@ -55,7 +56,12 @@ def search(payload: SearchPayload):
     # translate_synthesis = nrpm.translate_en_to_vn(synthesis)
 
     for article in article_summaries:
-        article["summary"] = highlight_summary(article["summary"])
+        summary_parts = extract_summary_into_parts(
+            highlight_summary(article["summary"])
+        )
+        article["summary"] = summary_parts["summary"]
+        article["study_analysis"] = summary_parts["study_analysis"]
+        article["risk_of_bias"] = summary_parts["risk_of_bias"]
         article["PMCID_path"] = get_PMCID_path(f"{article["PMCID"]}.txt")
 
     return JSONResponse(
@@ -72,17 +78,17 @@ def search(payload: SearchPayload):
 
 
 @app.post("/search/follow-up")
-def analyse_files(payload: AnalyseFilesPayload):
-    article_paths = [article["PMCID_path"] for article in payload.article_summaries]
+def analyse_files(payload: SearchFollowupPayload):
+    article_paths = [article.PMCID_path for article in payload.article_summaries]
     fetch_full_article_content(article_paths)
 
     article_text_file_names = [
-        f"{article["PMCID"]}.txt" for article in payload.article_summaries
+        f"{article.PMCID}.txt" for article in payload.article_summaries
     ]
     file_contents = get_full_article_content_from_disk(article_text_file_names)
 
     for article, file_name in zip(payload.article_summaries, article_text_file_names):
-        article["full_text"] = file_contents[file_name]
+        article.full_text = file_contents[file_name]
 
     answer, citations = nrpm.synthesize_from_full_text_articles(
         payload.question, payload.article_summaries
@@ -95,7 +101,7 @@ def analyse_files(payload: AnalyseFilesPayload):
                 "citations": citations,
             },
             # "translate_synthesis": translate_synthesis,
-            "article_summaries": payload.article_summaries,
+            "article_summaries": [x.__dict__ for x in payload.article_summaries],
         },
         status_code=status.HTTP_200_OK,
     )

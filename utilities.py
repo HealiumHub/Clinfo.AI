@@ -45,6 +45,28 @@ def post_process_answer(summary: str) -> str:
     return summary
 
 
+def extract_summary_into_parts(full_text: str) -> dict:
+    print(full_text)
+    summary = full_text[
+        full_text.index("**Summary:**") : full_text.index("**Study Design:**")
+    ]
+    study_design = full_text[
+        full_text.index("**Study Design:**") : full_text.index("**Sample Size:**")
+    ]
+    sample_size = full_text[
+        full_text.index("**Sample Size:**") : full_text.index("**Study Population:**")
+    ]
+    study_population = full_text[
+        full_text.index("**Study Population:**") : full_text.index("**Risk of Bias:**")
+    ]
+    risk_of_bias = full_text[full_text.index("**Risk of Bias:**") :]
+    return {
+        "summary": summary,
+        "study_analysis": f"{study_design}\n\n{sample_size}\n\n{study_population}",
+        "risk_of_bias": risk_of_bias,
+    }
+
+
 def highlight_summary(summary: str) -> str:
     summary = summary.replace("Summary:", "**Summary:**")
     summary = summary.replace("Study Design:", "**Study Design:**")

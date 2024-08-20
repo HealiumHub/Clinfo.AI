@@ -1,4 +1,4 @@
-from typing import Union
+from typing import Optional, Union
 from pydantic import BaseModel
 
 
@@ -6,7 +6,24 @@ class SearchPayload(BaseModel):
     question: str
 
 
-class AnalyseFilesPayload(BaseModel):
+class ArticleSummary(BaseModel):
+    title: str
+    url: str
+    abstract: str
+    citation: str
+    is_relevant: bool
+    PMID: str
+
+    summary: str
+    study_analysis: str
+    risk_of_bias: str
+
+    full_text: Optional[str] = ""
+    PMCID: Optional[str] = None
+    PMCID_path: Optional[str] = None
+
+
+class SearchFollowupPayload(BaseModel):
     question: str
     """
     "title": "Adherence to Antiretroviral Therapy Among HIV-Positive Pregnant Women on followup at Mizan Tepi University Teaching and Tepi General Hospitals, Southwest Ethiopia.",
@@ -19,6 +36,6 @@ class AnalyseFilesPayload(BaseModel):
     "summary": "*Summary:* The abstract does not provide specific evidence regarding the percentage of HIV-positive patients who transmit the virus to their children. Instead, it focuses on the adherence to antiretroviral therapy among HIV-positive pregnant women, which is a critical factor in reducing mother-to-child transmission of HIV.\n\n**Study Design:** Descriptive cross-sectional study.\n\n**Sample Size:** Not explicitly stated in the abstract.\n\n**Study Population:** HIV-positive pregnant women attending antiretroviral therapy clinics at Mizan Tepi University Teaching and Tepi General Hospitals.\n\n**Risk of Bias:** Potential risks of bias include self-reported adherence data, which can be subject to recall bias and social desirability bias. Additionally, the study's cross-sectional design limits the ability to establish causality. The abstract does not mention random sampling, which could introduce selection bias.",
     "PMCID_path": "oa_noncomm/txt/all/PMC7180300.txt"
     """
-    article_summaries: list[dict]
+    article_summaries: list[ArticleSummary]
     # article_paths: list[str]
     context: list[str]

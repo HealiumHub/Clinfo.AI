@@ -8,6 +8,8 @@ export interface ArticleSummary {
   PMCID: string | null;
   PMCID_path: string | null;
   summary: string;
+  risk_of_bias: string;
+  study_analysis: string;
 }
 
 export interface ArticleSummaryFollowup extends ArticleSummary {
